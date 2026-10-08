@@ -1,0 +1,22 @@
+# Search engines may read pages only to see the "noindex" tag, which keeps them out of results.
+# (Blocking them here would stop them seeing that tag and could leave bare links in search results.)
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: DuckDuckBot
+Allow: /
+
+# AI-training and archive crawlers: stay out entirely.
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: CCBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Google-Extended
+User-agent: PerplexityBot
+User-agent: Bytespider
+User-agent: ia_archiver
+User-agent: archive.org_bot
+Disallow: /
+
+User-agent: *
+Disallow: /

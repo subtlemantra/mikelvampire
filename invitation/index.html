@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Invitation · Mikel Vampire Masquerade</title>
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#0b0709">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<style>
+  .seal-wrap { max-width: 34rem; margin: 0 auto; padding: 1rem 16px 5rem; text-align: center; }
+  .seal { width: 120px; height: 120px; margin: 0 auto 1.5rem; display: block; filter: drop-shadow(0 0 22px rgba(200,40,60,.45)); }
+  .gate { display: flex; flex-direction: column; gap: .9rem; align-items: center; }
+  .gate label { font-family: var(--display); color: var(--gold); letter-spacing: .08em; }
+  .gate input {
+    width: 100%; max-width: 22rem; padding: .8rem 1rem; font: inherit; font-size: 1.15rem; text-align: center;
+    background: var(--bg-2); color: var(--ink); border: 1px solid var(--line); outline: none;
+  }
+  .gate input:focus { border-color: var(--gold); }
+  .gate .btn { cursor: pointer; font: inherit; font-family: var(--display); }
+  .msg { min-height: 1.6em; color: var(--blood-bright); font-style: italic; margin: .2rem 0 0; }
+  .revealed { text-align: left; border: 1px solid var(--line); border-top: 3px solid var(--blood); background: var(--bg-2); padding: 1.6rem 1.5rem; margin-top: 1rem; }
+  .revealed h2 { font-size: 1.5rem; color: var(--gold); text-align: center; margin-bottom: 1rem; }
+  .revealed h3 { font-family: var(--display); font-weight: 400; color: var(--gold); font-size: .9rem; letter-spacing: .12em; text-transform: uppercase; margin: 1.2rem 0 .3rem; }
+  .revealed p, .revealed address { margin: 0; font-style: normal; color: var(--ink); }
+  .revealed a { color: var(--gold); }
+  .forget { margin-top: 1.5rem; font-size: .95rem; color: var(--muted); background: none; border: 0; text-decoration: underline; cursor: pointer; font: inherit; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="/" aria-label="Mikel Vampire Masquerade, home">
+    <svg class="mask" viewBox="0 0 64 28" aria-hidden="true"><path d="M2 6c6-4 16-4 22 2 3 3 5 3 8 3s5 0 8-3c6-6 16-6 22-2-1 10-6 18-15 19-6 1-10-3-15-3s-9 4-15 3C8 24 3 16 2 6Z"/><ellipse cx="17" cy="13" rx="6" ry="3.5" class="eye"/><ellipse cx="47" cy="13" rx="6" ry="3.5" class="eye"/></svg>
+    <span>Mikel</span>
+  </a>
+  <nav aria-label="Main">
+    <a href="/codex/">Codex</a>
+    <a href="/basics/">Basics</a>
+    <a href="/clans/">Clans</a>
+    <a href="/#rulebook">Library</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="page-head">
+    <p class="kicker">For invited guests</p>
+    <h1>The Invitation</h1>
+    <p class="lede">The way to the gathering is sealed. Speak the word you were given, and it will open.</p>
+  </section>
+
+  <div class="seal-wrap">
+    <svg class="seal" viewBox="0 0 120 120" aria-hidden="true">
+      <path d="M60 6c10 0 14 8 22 10s16-2 22 6-2 14 0 22 10 12 8 22-12 10-14 18 2 16-6 22-14-2-22 0-12 10-22 8-10-12-18-14-16 2-22-6 2-14 0-22-10-12-8-22 12-10 14-18-2-16 6-22 14 2 22 0 8-6 16-6Z" fill="#9e1b2b"/>
+      <circle cx="60" cy="60" r="34" fill="none" stroke="#5e0f19" stroke-width="3"/>
+      <path d="M38 54c5-4 13-4 17 1 2 2 3 2 5 2s3 0 5-2c4-5 12-5 17-1-1 8-5 13-11 14-4 1-7-2-11-2s-7 3-11 2c-6-1-10-6-11-14Z" fill="#5e0f19"/>
+    </svg>
+
+    <form class="gate" id="gate" autocomplete="off">
+      <label for="word">Speak the word</label>
+      <input id="word" name="word" type="password" required autocapitalize="none" spellcheck="false" placeholder="· · · · · ·">
+      <button class="btn primary" type="submit" id="open">Break the Seal</button>
+      <p class="msg" id="msg" role="status" aria-live="polite"></p>
+    </form>
+
+    <div id="out" hidden>
+      <div class="revealed" id="content"></div>
+      <button class="forget" id="forget" type="button">Seal it again on this device</button>
+    </div>
+
+    <noscript><p class="msg">This page needs JavaScript to open the seal.</p></noscript>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-links"><a href="/codex/">Codex</a><a href="/basics/">Basics</a><a href="/clans/">Clans</a><a href="/">Home</a></div>
+  <p class="motto">Where darkness is an art form.</p>
+  <p class="copy">© 2026 Mikel Vampire Masquerade</p>
+</footer>
+
+<script>
+// The details below are encrypted (AES-256-GCM, key from the passphrase via PBKDF2-SHA256).
+// Without the word, this is unreadable — to people, search engines and anyone reading the source.
+var SEALED = {"iter":0,"salt":"","iv":"","ct":""};
+
+(function () {
+  var form = document.getElementById("gate"), input = document.getElementById("word"),
+      msg = document.getElementById("msg"), out = document.getElementById("out"),
+      content = document.getElementById("content"), btn = document.getElementById("open");
+  var KEY = "mvm-word";
+  function b64(s) { return Uint8Array.from(atob(s), function (c) { return c.charCodeAt(0); }); }
+  async function unseal(word) {
+    var enc = new TextEncoder();
+    var base = await crypto.subtle.importKey("raw", enc.encode(word.trim().toLowerCase()), "PBKDF2", false, ["deriveKey"]);
+    var key = await crypto.subtle.deriveKey(
+      { name: "PBKDF2", salt: b64(SEALED.salt), iterations: SEALED.iter, hash: "SHA-256" },
+      base, { name: "AES-GCM", length: 256 }, false, ["decrypt"]);
+    var plain = await crypto.subtle.decrypt({ name: "AES-GCM", iv: b64(SEALED.iv) }, key, b64(SEALED.ct));
+    return new TextDecoder().decode(plain);
+  }
+  async function attempt(word, quiet) {
+    if (!SEALED.ct) { msg.textContent = "Invitations are not open yet."; return; }
+    btn.disabled = true; msg.textContent = quiet ? "" : "The seal stirs…";
+    try {
+      content.innerHTML = await unseal(word);
+      form.hidden = true; out.hidden = false; msg.textContent = "";
+      try { sessionStorage.setItem(KEY, word); } catch (e) {}
+    } catch (e) {
+      msg.textContent = quiet ? "" : "The seal holds. That is not the word.";
+      try { sessionStorage.removeItem(KEY); } catch (e2) {}
+    } finally { btn.disabled = false; }
+  }
+  form.addEventListener("submit", function (e) { e.preventDefault(); attempt(input.value, false); });
+  document.getElementById("forget").addEventListener("click", function () {
+    try { sessionStorage.removeItem(KEY); } catch (e) {}
+    content.innerHTML = ""; out.hidden = true; form.hidden = false; input.value = ""; input.focus();
+  });
+  try { var saved = sessionStorage.getItem(KEY); if (saved) attempt(saved, true); } catch (e) {}
+})();
+</script>
+</body>
+</html>
