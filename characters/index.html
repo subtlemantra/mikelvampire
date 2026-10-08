@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<title>Characters · Mikel Vampire Masquerade</title>
+<meta name="theme-color" content="#0b0709">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<style>
+  .cast { max-width: 1000px; margin: 0 auto; padding: 0 16px 4rem; }
+  .person { display: grid; gap: 1.6rem 2.6rem; grid-template-columns: 1fr; align-items: start; padding: 3rem 0; border-top: 1px solid var(--line); scroll-margin-top: 5rem; }
+  @media (min-width: 820px) {
+    .person { grid-template-columns: 300px 1fr; }
+    .person:nth-of-type(even) { grid-template-columns: 1fr 300px; }
+    .person:nth-of-type(even) .portrait-wrap { order: 2; }
+  }
+  .portrait-wrap { position: relative; }
+  .portrait { width: 100%; max-width: 300px; height: auto; display: block; margin: 0 auto; filter: drop-shadow(0 0 28px rgba(158,27,43,.35)); }
+  .person h2 { font-size: clamp(2rem, 6vw, 2.8rem); color: var(--ink); line-height: 1.1; }
+  .person .role { font-family: var(--display); color: var(--blood-bright); font-size: 1rem; letter-spacing: .04em; margin: .4rem 0 .2rem; }
+  .person .epithet { font-style: italic; color: var(--gold); font-size: 1.2rem; margin: 0 0 1.2rem; }
+  .person p { margin: 0 0 1rem; }
+  .ledger { display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); margin: 1.4rem 0 1.2rem; }
+  .ledger div { border: 1px solid var(--line); background: var(--bg-2); padding: .6rem .8rem; }
+  .ledger dt { font-family: var(--display); font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
+  .ledger dd { margin: .2rem 0 0; font-size: 1.05rem; }
+  .whispers { border-left: 3px solid var(--blood); background: var(--bg-2); padding: .9rem 1.1rem; margin-top: 1.2rem; }
+  .whispers h3 { font-family: var(--display); font-weight: 400; font-size: .85rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin: 0 0 .5rem; }
+  .whispers ul { margin: 0; padding-left: 1.1rem; color: var(--muted); }
+  .whispers li { margin: .3rem 0; font-style: italic; }
+  .quote { font-family: var(--display); font-size: 1.15rem; color: var(--ink); border: 0; margin: 1.2rem 0 0; padding: 0; }
+  .quote::before { content: "“"; color: var(--blood-bright); }
+  .quote::after { content: "”"; color: var(--blood-bright); }
+  .cast-jump { display: flex; gap: .6rem; justify-content: center; flex-wrap: wrap; margin-top: 1.6rem; }
+  .cast-jump a { text-decoration: none; font-family: var(--display); font-size: .9rem; color: var(--muted); border: 1px solid var(--line); padding: .45rem .9rem; }
+  .cast-jump a:hover { color: var(--ink); border-color: var(--blood); }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="/" aria-label="Mikel Vampire Masquerade, home">
+    <svg class="mask" viewBox="0 0 64 28" aria-hidden="true"><path d="M2 6c6-4 16-4 22 2 3 3 5 3 8 3s5 0 8-3c6-6 16-6 22-2-1 10-6 18-15 19-6 1-10-3-15-3s-9 4-15 3C8 24 3 16 2 6Z"/><ellipse cx="17" cy="13" rx="6" ry="3.5" class="eye"/><ellipse cx="47" cy="13" rx="6" ry="3.5" class="eye"/></svg>
+    <span>Mikel</span>
+  </a>
+  <nav aria-label="Main">
+    <a href="/codex/">Codex</a>
+    <a href="/basics/">Basics</a>
+    <a href="/clans/">Clans</a>
+    <a href="/characters/" aria-current="page">Characters</a>
+    <a href="/sheet/">Sheet</a>
+    <a href="/#rulebook">Library</a>
+  </nav>
+</header>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <radialGradient id="pg-sky" cx="50%" cy="28%" r="75%"><stop offset="0" stop-color="#3a0d16"/><stop offset=".55" stop-color="#16070b"/><stop offset="1" stop-color="#070405"/></radialGradient>
+    <radialGradient id="pg-moon" cx="45%" cy="40%" r="60%"><stop offset="0" stop-color="#e2475b"/><stop offset=".7" stop-color="#9e1b2b"/><stop offset="1" stop-color="#5e0f19"/></radialGradient>
+    <linearGradient id="pg-floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#070405" stop-opacity="0"/><stop offset="1" stop-color="#070405"/></linearGradient>
+    <clipPath id="pg-arch"><path d="M14 396V140C14 64 74 14 150 14s136 50 136 126v256Z"/></clipPath>
+  </defs>
+</svg>
+
+<main id="top">
+  <section class="page-head">
+    <p class="kicker">Seattle by Night</p>
+    <h1>Dramatis Personae</h1>
+    <p class="lede">Rain on the Sound, neon on wet asphalt, and a city whose nights are about to catch fire. These are the Kindred whose names you'll learn soon enough, whether you want to or not.</p>
+    <nav class="cast-jump" aria-label="Jump to a character">
+      <a href="#hector">Baron Hector</a><a href="#cameron">Cameron</a><a href="#callus">Callus</a>
+    </nav>
+  </section>
+
+  <div class="cast">
+
+    <article class="person" id="hector">
+      <div class="portrait-wrap"><svg class="portrait" viewBox="0 0 300 410" role="img" aria-label="Portrait of Baron Hector: a broad-shouldered figure in an open-collared shirt and gold chain, smoking a cigar before a red moon and city skyline">
+  <g clip-path="url(#pg-arch)">
+    <rect width="300" height="410" fill="url(#pg-sky)"/>
+    <circle cx="150" cy="118" r="80" fill="url(#pg-moon)" opacity=".92"/>
+    <!-- city skyline -->
+    <path d="M0 300V250h18v-20h14v20h10v-38h16v38h12v-14h14v-30h6v-22h6v22h6v30h14v24h80v-24h14v-30h10v30h12v-46h18v46h10v-16h16v26h20v-10h14v68Z" fill="#12070a"/>
+    <path d="M222 214v-46l6-10 6 10v46" fill="#12070a"/>
+    <!-- smoke -->
+    <path d="M214 214c10-12-6-20 4-32s-4-22 6-34" fill="none" stroke="#d8c7b8" stroke-opacity=".45" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M222 180c8-8-2-14 6-22" fill="none" stroke="#d8c7b8" stroke-opacity=".3" stroke-width="2" stroke-linecap="round"/>
+    <!-- figure -->
+    <path d="M36 410c0-92 44-136 92-146 6-1 10-6 10-12v-16h24v16c0 6 4 11 10 12 48 10 92 54 92 146Z" fill="#050304" stroke="#c9a35a" stroke-opacity=".55" stroke-width="1.5"/>
+    <ellipse cx="150" cy="186" rx="40" ry="50" fill="#050304" stroke="#c9a35a" stroke-opacity=".55" stroke-width="1.5"/>
+    <!-- slicked hair -->
+    <path d="M110 180c-4-38 18-60 42-60 26 0 44 18 40 58-6-22-20-34-42-34-22 0-34 14-40 36Z" fill="#0d0809"/>
+    <path d="M118 150c12-14 34-18 56-8" fill="none" stroke="#c9a35a" stroke-opacity=".5" stroke-width="1.2"/>
+    <!-- aviator glasses -->
+    <path d="M124 182h22c0 12-4 18-11 18s-11-6-11-18Zm30 0h22c0 12-4 18-11 18s-11-6-11-18Z" fill="#2a0a10" stroke="#c9a35a" stroke-width="1.6"/>
+    <path d="M146 184h8" stroke="#c9a35a" stroke-width="1.6"/>
+    <circle cx="131" cy="187" r="2" fill="#e2475b"/><circle cx="161" cy="187" r="2" fill="#e2475b"/>
+    <!-- moustache & cigar -->
+    <path d="M136 214c8-5 20-5 28 0-8 2-20 2-28 0Z" fill="#000"/>
+    <path d="M160 218l52-4 1 6-52 4Z" fill="#6b4a2a"/>
+    <circle cx="213" cy="217" r="3.5" fill="#f07a3a"/>
+    <!-- open collar & gold chain -->
+    <path d="M120 262l30 40 30-40" fill="none" stroke="#c9a35a" stroke-opacity=".7" stroke-width="2"/>
+    <path d="M128 266c6 26 38 26 44 0" fill="none" stroke="#c9a35a" stroke-width="3.5" stroke-dasharray="4 2"/>
+    <circle cx="150" cy="288" r="6" fill="#c9a35a"/>
+    <!-- rings -->
+  </g>
+  <rect x="0" y="300" width="300" height="110" fill="url(#pg-floor)" clip-path="url(#pg-arch)"/>
+  <path d="M14 396V140C14 64 74 14 150 14s136 50 136 126v256Z" fill="none" stroke="#c9a35a" stroke-width="2.5"/>
+  <path d="M24 388V142C24 72 80 24 150 24s126 48 126 118v246Z" fill="none" stroke="#c9a35a" stroke-opacity=".35" stroke-dasharray="2 5"/>
+  <path d="M150 2l7 10-7 10-7-10Z" fill="#c9a35a"/><path d="M2 396h296v12H2Z" fill="#c9a35a"/>
+</svg></div>
+      <div>
+        <h2>Baron Hector</h2>
+        <p class="role">Anarch Baron · Exile of Los Angeles</p>
+        <p class="epithet">The fire under Seattle</p>
+        <p>In life, Hector moved product north out of South America, and he learned early that fear and supply are the same kind of power. Death didn't end his career. The Embrace just changed what he sold. When the Camarilla's court in Los Angeles fell, the new powers in that city drove him out along with everyone else who had grown too strong to ignore.</p>
+        <p>He came north with nothing but a reputation and a supply line. In the rain-dark corners of Seattle, he built again. His blood dolls grew hooked on the high of drug-laced vessels, and his ghouls were bound by blood and habit at once. The young Kindred he took in were neonates the city's elders had used up and thrown away, and he gave them a purpose and a fist to rally behind. They call him <b>Baron</b>, the Anarch title for one who holds a domain because he can, and because his gang lets him.</p>
+        <p>Hector preaches an old Anarch gospel: <b>every vampire is equal under the curse.</b> No Prince, elder or ancient Tradition gets to write the rules for the young. He enforces that equality the only way he knows, with violence. His Beast lives just under the skin, and a careless word in his presence has ended more than one conversation and more than one unlife. Now he means to unite Seattle's scattered Anarchs and break the Camarilla's hold on the city.</p>
+        <dl class="ledger">
+          <div><dt>Sect</dt><dd>Anarch</dd></div>
+          <div><dt>Domain</dt><dd>Seattle's drug trade, and growing</dd></div>
+          <div><dt>Wants</dt><dd>The Camarilla broken; Seattle free</dd></div>
+          <div><dt>Weakness</dt><dd>A temper that answers before he thinks</dd></div>
+        </dl>
+        <div class="whispers"><h3>Whispers on the street</h3>
+          <ul>
+            <li>His product doesn't only go to kine. Some say Kindred are buying the blood of his addicts for the high.</li>
+            <li>The overdoses are piling up, and the police are starting to see a pattern.</li>
+            <li>He still owes someone in Los Angeles. Debts like that travel.</li>
+          </ul>
+        </div>
+        <blockquote class="quote">We're all damned the same. The only difference is who's willing to say it with a fist.</blockquote>
+      </div>
+    </article>
+
+    <article class="person" id="cameron">
+      <div class="portrait-wrap"><svg class="portrait" viewBox="0 0 300 410" role="img" aria-label="Portrait of Cameron the Alastor: a lean frontiersman in a wide-brimmed hat and long duster, a rifle over his shoulder, before a red moon and pine-covered mountains">
+  <g clip-path="url(#pg-arch)">
+    <rect width="300" height="410" fill="url(#pg-sky)"/>
+    <circle cx="150" cy="118" r="80" fill="url(#pg-moon)" opacity=".92"/>
+    <!-- mountains & pines -->
+    <path d="M0 290l60-80 40 44 50-74 54 66 34-30 62 74V300H0Z" fill="#12070a"/>
+    <path d="M10 300l12-34 12 34Zm22 0l10-26 10 26Zm212 0l12-36 12 36Zm24 0l10-28 10 28Z" fill="#0b0507"/>
+    <!-- rifle over shoulder -->
+    <path d="M198 300l64-170 6 2-62 172Z" fill="#1a0f0b" stroke="#c9a35a" stroke-opacity=".55" stroke-width="1.2"/>
+    <path d="M200 296l14 6-8 22-14-6Z" fill="#3a2414"/>
+    <!-- duster coat body -->
+    <path d="M40 410c0-90 40-134 88-144 6-1 10-6 10-12v-14h24v14c0 6 4 11 10 12 48 10 88 54 88 144Z" fill="#050304" stroke="#c9a35a" stroke-opacity=".55" stroke-width="1.5"/>
+    <!-- turned-up collar -->
+    <path d="M118 270l-22-28 34 20Zm64 0l22-28-34 20Z" fill="#0d0809" stroke="#c9a35a" stroke-opacity=".6" stroke-width="1.2"/>
+    <!-- bandana -->
+    <path d="M128 246c10 10 34 10 44 0l-4 18c-10 8-26 8-36 0Z" fill="#7a1420"/>
+    <path d="M142 262l8 22 8-22" fill="#7a1420"/>
+    <!-- head -->
+    <ellipse cx="150" cy="196" rx="34" ry="44" fill="#050304" stroke="#c9a35a" stroke-opacity=".55" stroke-width="1.5"/>
+    <!-- hat -->
+    <path d="M64 178c30-10 142-10 172 0 4 4-8 10-30 12-40 4-72 4-112 0-22-2-34-8-30-12Z" fill="#0d0809" stroke="#c9a35a" stroke-opacity=".7" stroke-width="1.4"/>
+    <path d="M114 176c-2-28 6-48 18-52 8-2 12 6 18 6s10-8 18-6c12 4 20 24 18 52Z" fill="#0d0809" stroke="#c9a35a" stroke-opacity=".7" stroke-width="1.4"/>
+    <path d="M115 166h70" stroke="#9e1b2b" stroke-width="4"/>
+    <!-- eyes under the brim -->
+    <path d="M132 200h10M158 200h10" stroke="#e2475b" stroke-width="2.4" stroke-linecap="round"/>
+    <!-- stubble jaw line -->
+    <path d="M128 222c8 14 36 14 44 0" fill="none" stroke="#c9a35a" stroke-opacity=".3" stroke-width="1"/>
+    <!-- warrant: rolled parchment with a red wax seal -->
+    <path d="M88 330l40-8 4 14-40 8Z" fill="#d9ccb8" opacity=".9"/>
+    <circle cx="112" cy="336" r="7" fill="#9e1b2b" stroke="#5e0f19" stroke-width="1.5"/>
+  </g>
+  <rect x="0" y="300" width="300" height="110" fill="url(#pg-floor)" clip-path="url(#pg-arch)"/>
+  <path d="M14 396V140C14 64 74 14 150 14s136 50 136 126v256Z" fill="none" stroke="#c9a35a" stroke-width="2.5"/>
+  <path d="M24 388V142C24 72 80 24 150 24s126 48 126 118v246Z" fill="none" stroke="#c9a35a" stroke-opacity=".35" stroke-dasharray="2 5"/>
+  <path d="M150 2l7 10-7 10-7-10Z" fill="#c9a35a"/><path d="M2 396h296v12H2Z" fill="#c9a35a"/>
+</svg></div>
+      <div>
+        <h2>Cameron</h2>
+        <p class="role">Alastor of the Camarilla · 10th Generation</p>
+        <p class="epithet">The rider who never stopped hunting</p>
+        <p>Cameron's family came from England with the westward tide: surveyors, rail men and settlers pushing the frontier toward the Pacific. Somewhere on that frontier in the 1800s, a vampire found him and decided that a man who could track a deer across bare rock and sit a horse through a blizzard would be useful for a very long time.</p>
+        <p>He was. As the railroads carried the kine west, the Kindred followed to claim the new cities, and Cameron rode ahead of them. He scouted the trails, guarded the routes and dealt with whatever waited in the dark. More than a century of that turned him into what the Camarilla calls an <b>Alastor</b>: one of the hunters sent by the sect's highest powers to track down those who threaten the Masquerade itself. Alastors answer to the very top, not to the local Prince. When one arrives in your city, someone important is already afraid.</p>
+        <p>Now Cameron hunts <b>Baron Hector</b>. The Camarilla doesn't much care about drugs. It cares about bodies, police reports and a trail of overdoses that leads back to things that should not exist. Cameron is patient, methodical and old-fashioned in his manners, and he is very hard to shake once he has your scent.</p>
+        <dl class="ledger">
+          <div><dt>Sect</dt><dd>Camarilla</dd></div>
+          <div><dt>Embraced</dt><dd>The American frontier, 1800s</dd></div>
+          <div><dt>Hunting</dt><dd>Baron Hector and his operation</dd></div>
+          <div><dt>Weakness</dt><dd>He still believes in the law, even this one</dd></div>
+        </dl>
+        <div class="whispers"><h3>Whispers in Elysium</h3>
+          <ul>
+            <li>He arrived without introducing himself to the Prince. Some say the Prince only learned of him afterward.</li>
+            <li>He carries a written warrant, and no one in Seattle has seen whose seal is on it.</li>
+            <li>Every Kindred who has run from him has said the same thing: he was already waiting where they stopped.</li>
+          </ul>
+        </div>
+        <blockquote class="quote">I've followed worse men across worse country. Seattle's got roofs, at least.</blockquote>
+      </div>
+    </article>
+
+    <article class="person" id="callus">
+      <div class="portrait-wrap"><svg class="portrait" viewBox="0 0 300 410" role="img" aria-label="Portrait of Callus the Auditor: a gaunt figure in a clerical collar and round spectacles holding an open ledger, before a red moon and the bell tower of a mission">
+  <g clip-path="url(#pg-arch)">
+    <rect width="300" height="410" fill="url(#pg-sky)"/>
+    <circle cx="150" cy="118" r="80" fill="url(#pg-moon)" opacity=".92"/>
+    <!-- mission bell towers -->
+    <path d="M18 300V196l26-30 26 30v104Z" fill="#12070a"/>
+    <path d="M38 196h12v22H38Z" fill="#2a0a10"/><path d="M44 150v-16M38 140h12" stroke="#12070a" stroke-width="4"/>
+    <path d="M230 300V196l26-30 26 30v104Z" fill="#12070a"/>
+    <path d="M250 196h12v22h-12Z" fill="#2a0a10"/><path d="M256 150v-16M250 140h12" stroke="#12070a" stroke-width="4"/>
+    <path d="M70 300v-60h160v60" fill="#0e0608"/>
+    <!-- gaunt robed body -->
+    <path d="M52 410c0-88 36-130 80-140 5-1 8-5 8-10v-14h20v14c0 5 3 9 8 10 44 10 80 52 80 140Z" fill="#050304" stroke="#c9a35a" stroke-opacity=".55" stroke-width="1.5"/>
+    <!-- clerical collar -->
+    <path d="M136 258h28v10h-28Z" fill="#e9dfd6"/>
+    <!-- head: long and narrow -->
+    <ellipse cx="150" cy="194" rx="31" ry="48" fill="#050304" stroke="#c9a35a" stroke-opacity=".55" stroke-width="1.5"/>
+    <!-- thin combed hair -->
+    <path d="M120 180c0-34 14-50 30-50s30 16 30 50c-6-18-16-30-30-30s-24 12-30 30Z" fill="#0d0809"/>
+    <!-- round spectacles -->
+    <circle cx="137" cy="194" r="10" fill="#1a080c" stroke="#c9a35a" stroke-width="1.8"/>
+    <circle cx="163" cy="194" r="10" fill="#1a080c" stroke="#c9a35a" stroke-width="1.8"/>
+    <path d="M147 194h6" stroke="#c9a35a" stroke-width="1.8"/>
+    <circle cx="137" cy="195" r="2.2" fill="#e2475b"/><circle cx="163" cy="195" r="2.2" fill="#e2475b"/>
+    <path d="M132 188l6-3M158 188l6-3" stroke="#fff" stroke-opacity=".5" stroke-width="1.2"/>
+    <!-- thin mouth -->
+    <path d="M140 222h20" stroke="#c9a35a" stroke-opacity=".35" stroke-width="1"/>
+    <!-- open ledger -->
+    <path d="M86 330l64-12 64 12v58l-64-10-64 10Z" fill="#d9ccb8" stroke="#c9a35a" stroke-width="1.5"/>
+    <path d="M150 318v60" stroke="#8a7a62" stroke-width="1.5"/>
+    <path d="M96 342l44-8M96 352l44-8M96 362l44-8M160 334l44 8M160 344l44 8M160 354l44 8" stroke="#6b5a44" stroke-width="1.2"/>
+    <path d="M176 360l30 6" stroke="#9e1b2b" stroke-width="2"/>
+    <!-- quill -->
+    <path d="M212 384l34-70c2 10-2 30-14 48Z" fill="#e9dfd6" opacity=".85"/>
+  </g>
+  <rect x="0" y="300" width="300" height="110" fill="url(#pg-floor)" opacity=".6" clip-path="url(#pg-arch)"/>
+  <path d="M14 396V140C14 64 74 14 150 14s136 50 136 126v256Z" fill="none" stroke="#c9a35a" stroke-width="2.5"/>
+  <path d="M24 388V142C24 72 80 24 150 24s126 48 126 118v246Z" fill="none" stroke="#c9a35a" stroke-opacity=".35" stroke-dasharray="2 5"/>
+  <path d="M150 2l7 10-7 10-7-10Z" fill="#c9a35a"/><path d="M2 396h296v12H2Z" fill="#c9a35a"/>
+</svg></div>
+      <div>
+        <h2>Callus</h2>
+        <p class="role">The Auditor · St. Augustus Mission</p>
+        <p class="epithet">Every debt is written down</p>
+        <p>The St. Augustus Mission serves soup to the hungry, gives beds to the lost and asks no questions of anyone who comes through its doors after dark. Behind the chapel, past the shelter cots, a lamp burns all night in a small office. That is where Callus keeps his books.</p>
+        <p>Kindred society runs on <b>boons</b>: favours owed, repaid and traded between vampires, binding as any contract. Somebody has to keep track. Callus does. He audits who owes whom, which feeding grounds belong to which domain, and which promises were made in Elysium and quietly broken outside it. Princes have been embarrassed by his ledgers, and Barons have been ruined by them. The mission's endless stream of the forgotten also gives him something every Kindred needs and few can find so safely.</p>
+        <p>No one is entirely sure whose interests Callus serves, or whether his neutrality is real or simply the most valuable thing he sells. What everyone agrees on is that sooner or later, your name ends up in his book.</p>
+        <dl class="ledger">
+          <div><dt>Sect</dt><dd>Unclear, and he prefers it that way</dd></div>
+          <div><dt>Haven</dt><dd>St. Augustus Mission</dd></div>
+          <div><dt>Trades in</dt><dd>Boons, debts, secrets and records</dd></div>
+          <div><dt>Weakness</dt><dd>A ledger can be stolen</dd></div>
+        </dl>
+        <div class="whispers"><h3>Whispers at the Mission</h3>
+          <ul>
+            <li>Both Hector and the Camarilla have paid him a visit this month.</li>
+            <li>The mission's guests sleep soundly. Some of them sleep a little too soundly.</li>
+            <li>There is supposedly a second ledger, one he has never shown anyone.</li>
+          </ul>
+        </div>
+        <blockquote class="quote">I don't take sides. I take notes.</blockquote>
+        <a class="back-top" href="#top">↑ Back to top</a>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-links"><a href="/codex/">Codex</a><a href="/basics/">Basics</a><a href="/clans/">Clans</a><a href="/characters/">Characters</a><a href="/">Home</a></div>
+  <p class="motto">Where darkness is an art form.</p>
+  <p class="copy">© 2026 Mikel Vampire Masquerade · Original portraits for our chronicle</p>
+</footer>
+</body>
+</html>
