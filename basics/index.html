@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gameplay Basics · Mikel Vampire Masquerade</title>
+<meta name="description" content="How to play Vampire: The Masquerade 5th Edition — dice, Hunger, Willpower, combat, frenzy and Humanity, with rulebook page references.">
+<meta name="theme-color" content="#0b0709">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="/" aria-label="Mikel Vampire Masquerade, home">
+    <svg class="mask" viewBox="0 0 64 28" aria-hidden="true"><path d="M2 6c6-4 16-4 22 2 3 3 5 3 8 3s5 0 8-3c6-6 16-6 22-2-1 10-6 18-15 19-6 1-10-3-15-3s-9 4-15 3C8 24 3 16 2 6Z"/><ellipse cx="17" cy="13" rx="6" ry="3.5" class="eye"/><ellipse cx="47" cy="13" rx="6" ry="3.5" class="eye"/></svg>
+    <span>Mikel</span>
+  </a>
+  <nav aria-label="Main">
+    <a href="/codex/">Codex</a>
+    <a href="/basics/" aria-current="page">Basics</a>
+    <a href="/clans/">Clans</a>
+    <a href="/#rulebook">Rulebook</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="page-head">
+    <p class="kicker">The Codex · Part I</p>
+    <h1>Gameplay Basics</h1>
+    <p class="lede">Everything you need at the table, from your first roll to your last drop of Humanity. Each rule links to its page in the Core Rulebook.</p>
+    <p class="note"><strong>Using the page links:</strong> each <span style="color:var(--gold)">❦ p.</span> button opens the Core Rulebook in Google Drive. You'll need to be signed in with an invited account. Drive counts pages from the cover, so to jump there, type the page number <b>plus 2</b> into Drive's page box (p. 119 → page 121).</p>
+  </section>
+
+  <div class="wrap layout">
+    <aside class="toc-side">
+      <nav aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>
+          <li><a href="#the-game">The game in a nutshell</a></li>
+          <li><a href="#sheet">Reading your sheet</a></li>
+          <li><a href="#rolling">Rolling dice</a></li>
+          <li><a href="#results">Wins, criticals &amp; failures</a></li>
+          <li><a href="#willpower">Willpower</a></li>
+          <li><a href="#resisting">“Saving throws”</a></li>
+          <li><a href="#contests">Contests</a></li>
+          <li><a href="#hunger">Hunger dice</a></li>
+          <li><a href="#rouse">Rousing the Blood</a></li>
+          <li><a href="#feeding">Feeding</a></li>
+          <li><a href="#potency">Blood Potency</a></li>
+          <li><a href="#conflict">Conflict &amp; combat</a></li>
+          <li><a href="#damage">Damage &amp; healing</a></li>
+          <li><a href="#frenzy">Frenzy</a></li>
+          <li><a href="#dangers">Sun, fire &amp; stakes</a></li>
+          <li><a href="#humanity">Humanity</a></li>
+          <li><a href="#bond">The Blood Bond</a></li>
+          <li><a href="#disciplines">Disciplines</a></li>
+          <li><a href="#creation">Making a character</a></li>
+          <li><a href="#xp">Experience</a></li>
+          <li><a href="#time">Time &amp; pacing</a></li>
+        </ol>
+      </nav>
+    </aside>
+
+    <div>
+
+      <section class="rule" id="the-game">
+        <h2>The game in a nutshell</h2>
+        <div class="refs"><a class="pg" data-p="33"></a><a class="pg" data-p="40"></a></div>
+        <p>You play a vampire, one of the Kindred, in a modern city ruled by older and hungrier monsters. One person is the <b>Storyteller</b>: they run the world, the rival vampires and the mortals. Everyone else plays a single character, and together you form a <b>coterie</b>.</p>
+        <p>Mostly you talk: describe what your character does and says, and the Storyteller describes what happens. You only reach for dice when something is uncertain and the outcome matters. Three forces push against you all the time: the <b>Masquerade</b> (keep mortals from learning vampires exist), your <b>Hunger</b> (the need for blood), and your <b>Humanity</b> (what's left of the person you were).</p>
+        <div class="box blood"><h4>The Golden Rule</h4><p>The book says outright that its rules are guidelines. If a rule gets in the way of the story your table wants, change it. <a class="pg" data-p="130"></a></p></div>
+      </section>
+
+      <section class="rule" id="sheet">
+        <h2>Reading your character sheet</h2>
+        <div class="refs"><a class="pg" data-p="152"></a><a class="pg" data-p="155"></a></div>
+        <p>Almost everything on the sheet is rated in <b>dots from 0 to 5</b>. Two dots is average for a person, and five is the best in the city.</p>
+        <ul>
+          <li><b>Attributes</b> (9): raw talent in three groups. Physical: Strength, Dexterity, Stamina. Social: Charisma, Manipulation, Composure. Mental: Intelligence, Wits, Resolve.</li>
+          <li><b>Skills</b> (27): trained ability, such as Brawl, Firearms, Persuasion, Occult and Technology. You can add <b>Specialties</b> (e.g. Firearms: Sniper) for one bonus die when they apply. <a class="pg" data-p="157"></a></li>
+          <li><b>Disciplines</b>: your vampiric powers. Each clan has three it learns most easily.</li>
+          <li><b>Health</b> = Stamina + 3. <b>Willpower</b> = Composure + Resolve. These are “trackers”: boxes you fill in as you take damage or spend them. <a class="pg" data-p="119"></a></li>
+          <li><b>Hunger</b> (0–5), <b>Humanity</b> (0–10) and <b>Blood Potency</b> (0–10) are the vampire traits covered further down.</li>
+          <li><b>Advantages &amp; Flaws</b>: Merits, Backgrounds (Haven, Herd, Resources, Status…) and their downsides. <a class="pg" data-p="179"></a></li>
+          <li><b>Convictions &amp; Touchstones</b>: the beliefs and the mortals that anchor your Humanity. <a class="pg" data-p="172"></a></li>
+        </ul>
+      </section>
+
+      <section class="rule" id="rolling">
+        <h2>Rolling dice</h2>
+        <div class="refs"><a class="pg" data-p="117"></a><a class="pg" data-p="118"></a><a class="pg" data-p="119"></a></div>
+        <p>V5 uses only <b>ten-sided dice</b>. A normal roll, called a <b>test</b>, works like this:</p>
+        <ol>
+          <li>Say what you're trying to do and how.</li>
+          <li>The Storyteller names two traits to add together. Usually that's <b>Attribute + Skill</b> (e.g. Dexterity + Stealth), sometimes Attribute + Discipline or two Attributes. That number is your <b>dice pool</b>.</li>
+          <li>The Storyteller sets a <b>Difficulty</b>: the number of successes you need.</li>
+          <li>Roll the pool. Every die showing <b>6 or higher is a success</b>, and the 0 on the die counts as a 10.</li>
+          <li>If your successes <b>equal or beat the Difficulty, you win</b>.</li>
+        </ol>
+        <p>No Skill? Just roll the Attribute; there's no extra penalty. No pool can ever drop below 1 die.</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Difficulty</th><th>Successes</th><th>Feels like…</th></tr></thead>
+          <tbody>
+            <tr><td>Routine</td><td class="num">1</td><td>Hitting something that isn't moving</td></tr>
+            <tr><td>Straightforward</td><td class="num">2</td><td>Scaring someone who's already nervous</td></tr>
+            <tr><td>Moderate</td><td class="num">3</td><td>Fixing a car stereo, walking a tightrope</td></tr>
+            <tr><td>Challenging</td><td class="num">4</td><td>Tracking down a whisper in a crowd</td></tr>
+            <tr><td>Hard</td><td class="num">5</td><td>Talking a cop out of an arrest</td></tr>
+            <tr><td>Very Hard</td><td class="num">6</td><td>Calming a violent mob</td></tr>
+            <tr><td>Nearly Impossible</td><td class="num">7+</td><td>Finding one stranger in a huge city in one night</td></tr>
+          </tbody>
+        </table></div>
+        <h3>Modifiers</h3>
+        <p>The Storyteller can change your pool (you're hurt, drugged or using a Specialty) or change the Difficulty (rain, bad tools, gunfire). Roughly, <b>two dice equal one point of Difficulty</b>. Using bad or improvised tools usually adds +1 Difficulty, and some jobs are impossible with no tools at all. <a class="pg" data-p="119"></a><a class="pg" data-p="120"></a></p>
+        <h3>Automatic wins</h3>
+        <p>If your pool is <b>at least twice the Difficulty</b>, the Storyteller can just let you succeed without rolling. This is meant to keep easy scenes moving, and it's rarely used in a fight. <a class="pg" data-p="120"></a></p>
+        <h3>Teamwork</h3>
+        <p>When several characters help, the person with the biggest pool rolls and adds <b>+1 die per helper</b> who has at least one dot in the Skill. <a class="pg" data-p="122"></a></p>
+        <div class="box"><h4>Example</h4><p>Resolve 3 + Investigation 3 = 6 dice against Difficulty 2. You roll <span class="dice"><span class="die s">8</span><span class="die">3</span><span class="die s">6</span><span class="die">1</span><span class="die s">9</span><span class="die">4</span></span>, which is three successes. You win and find the clue.</p></div>
+      </section>
+
+      <section class="rule" id="results">
+        <h2>Wins, criticals &amp; failures</h2>
+        <div class="refs"><a class="pg" data-p="120"></a><a class="pg" data-p="121"></a><a class="pg" data-p="122"></a></div>
+        <ul>
+          <li><b>Critical:</b> every <b>pair of 10s</b> is worth <b>4 successes</b> instead of 2. Three 10s count as 5 successes, and four 10s count as 8. A winning roll with at least one pair is a <b>critical win</b>. You succeed with style, speed or extra effect.</li>
+          <li><b>Margin:</b> the successes you rolled beyond the Difficulty. It sets damage and the strength of many powers. An automatic win has a margin of 0.</li>
+          <li><b>Win at a cost:</b> if you rolled some successes but not enough, the Storyteller may let you succeed anyway, with a price such as damage, unwanted attention or something lost. You can always choose to fail instead.</li>
+          <li><b>Total failure:</b> no successes at all. Sometimes nothing happens, and sometimes something goes badly wrong.</li>
+          <li><b>Trying again:</b> you can retry if something has changed, like better tools or more time. In fights and chases you can keep repeating an action. <a class="pg" data-p="122"></a></li>
+        </ul>
+        <div class="box"><h4>Reading a critical</h4><p><span class="dice"><span class="die s c">10</span><span class="die s c">10</span><span class="die s">7</span><span class="die">2</span><span class="die">5</span></span> = 4 (the pair of 10s) + 1 (the 7) = <b>5 successes</b>.</p></div>
+      </section>
+
+      <section class="rule" id="willpower">
+        <h2>Willpower</h2>
+        <div class="refs"><a class="pg" data-p="122"></a><a class="pg" data-p="157"></a><a class="pg" data-p="127"></a></div>
+        <p>Willpower is your character's grit. You spend it in two main ways:</p>
+        <ul>
+          <li><b>Re-roll:</b> spend 1 Willpower to re-roll <b>up to three normal dice</b> on any Attribute, Skill or Discipline roll. You <b>can't</b> re-roll Hunger dice, single-die checks, or rolls of Willpower or Humanity themselves.</li>
+          <li><b>Hold on:</b> to resist frenzy, take control of yourself during one, or push through some powers.</li>
+        </ul>
+        <p>A spent point is marked as one box of Superficial damage on your Willpower tracker. At the start of each session you clear Superficial Willpower damage equal to your higher of Composure or Resolve. You heal 1 Aggravated Willpower if you acted toward your Ambition. <a class="pg" data-p="127"></a></p>
+        <p>The book's advice is not to hoard it. Willpower comes back every session, and it's your main tool for cancelling a bad Hunger result (below).</p>
+      </section>
+
+      <section class="rule" id="resisting">
+        <h2>“Saving throws”: how you resist things</h2>
+        <div class="refs"><a class="pg" data-p="118"></a><a class="pg" data-p="219"></a><a class="pg" data-p="123"></a></div>
+        <p>V5 has <b>no saving throws</b> like Dungeons &amp; Dragons does. When something tries to affect you, you roll a normal pool against it, or the attacker rolls against a number based on your traits. These are the rolls that fill that role:</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Danger</th><th>What you roll</th><th>Page</th></tr></thead>
+          <tbody>
+            <tr><td>Mind powers (Dominate, Presence and the like)</td><td>Usually <b>Resolve + Composure</b> or another pool the power lists, as a contest against the user</td><td><a class="pg" data-p="118"></a></td></tr>
+            <tr><td>Being hit in a fight</td><td>Your defence pool in the same roll as the attack, e.g. <b>Dexterity + Athletics</b> to dodge</td><td><a class="pg" data-p="125"></a></td></tr>
+            <tr><td>Losing control (frenzy)</td><td><b>Willpower + ⅓ of your Humanity</b> vs. Difficulty set by the trigger</td><td><a class="pg" data-p="219"></a></td></tr>
+            <tr><td>Losing Humanity at session end</td><td>A <b>Remorse</b> roll: one die per empty Humanity box</td><td><a class="pg" data-p="239"></a></td></tr>
+            <tr><td>Hunger rising when you use your Blood</td><td>A <b>Rouse Check</b>: one die, 6+ keeps Hunger steady</td><td><a class="pg" data-p="211"></a></td></tr>
+            <tr><td>Defying someone you're Blood Bound to</td><td><b>Resolve + Intelligence</b> vs. the Bond's strength</td><td><a class="pg" data-p="234"></a></td></tr>
+            <tr><td>Extreme cold, staying awake by day</td><td><b>Stamina + Resolve</b> / a <b>Humanity</b> roll</td><td><a class="pg" data-p="221"></a></td></tr>
+          </tbody>
+        </table></div>
+        <p><b>Checks</b> are special single-die rolls, mostly Rouse Checks. You need a 6+, and you can't use Willpower or automatic wins on them. <a class="pg" data-p="123"></a></p>
+      </section>
+
+      <section class="rule" id="contests">
+        <h2>Contests</h2>
+        <div class="refs"><a class="pg" data-p="123"></a></div>
+        <p>When someone actively opposes you, both sides roll their own pool, and the pools don't have to match. Sneaking past a guard might be your Dexterity + Stealth against their Wits + Awareness. <b>Ties go to the person acting.</b></p>
+        <p>To save time, the Storyteller can <b>“take half”</b> for a background character: their successes simply equal half their pool, rounded down. Player characters can contest each other too.</p>
+      </section>
+
+      <section class="rule" id="hunger">
+        <h2>Hunger dice</h2>
+        <div class="refs"><a class="pg" data-p="205"></a><a class="pg" data-p="207"></a><a class="pg" data-p="208"></a></div>
+        <p>This is the heart of V5. Your <b>Hunger</b> runs from 0 (sated) to 5 (starving). For every point of Hunger, <b>swap one normal die in your pool for a red Hunger die</b>. The pool stays the same size, but those red dice belong to the Beast. Hunger dice are left out of Rouse Checks, Willpower rolls and Humanity rolls.</p>
+        <p>Hunger dice score successes just like normal dice, but <b>Willpower can't re-roll them</b>, and two of their faces carry extra consequences:</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Result</th><th>When it happens</th><th>What it means</th></tr></thead>
+          <tbody>
+            <tr><td><b>Messy critical</b></td><td>You score a critical win and <b>at least one of the 10s is on a Hunger die</b></td><td>You succeed spectacularly, but like an animal: a Masquerade breach, gaining Stains, losing an Advantage dot, or a torn-up mess.</td></tr>
+            <tr><td><b>Bestial failure</b></td><td>You <b>fail</b> the roll and <b>at least one Hunger die shows a 1</b></td><td>The Beast takes over. You usually have to act out a <b>Compulsion</b>, or take Aggravated damage, lose an Advantage dot, or gain Hunger.</td></tr>
+          </tbody>
+        </table></div>
+        <p>If the roll succeeds anyway, Hunger-die 1s don't matter. To dodge a messy critical or a bestial failure, spend Willpower to re-roll your <i>normal</i> dice and change the overall result. <a class="pg" data-p="205"></a></p>
+        <h3>Compulsions</h3>
+        <p>A Compulsion is an urge you play out until it's satisfied, usually with <b>−2 dice</b> to anything that doesn't serve it. You can't spend Willpower to ignore one. The general ones are <b>Hunger</b> (feed now), <b>Dominance</b> (win and gloat), <b>Harm</b> (hurt something) and <b>Paranoia</b> (get somewhere safe). Each clan also has its own, listed on the <a href="/clans/">Clans page</a>. Playing one out well can earn back a point of Willpower. <a class="pg" data-p="208"></a><a class="pg" data-p="210"></a></p>
+      </section>
+
+      <section class="rule" id="rouse">
+        <h2>Rousing the Blood</h2>
+        <div class="refs"><a class="pg" data-p="211"></a><a class="pg" data-p="217"></a><a class="pg" data-p="218"></a><a class="pg" data-p="219"></a></div>
+        <p>Using your vampiric nature costs blood. Each time you do, make a <b>Rouse Check</b>: roll one die. <b>6+ and nothing happens; 1–5 and your Hunger goes up by 1.</b> The effect works either way. You make one:</p>
+        <ul>
+          <li>every night when you <b>wake up</b> (fail at Hunger 5 and you fall into torpor);</li>
+          <li>to use most <b>Discipline powers</b>;</li>
+          <li>for a <b>Blood Surge</b>: add bonus dice (based on Blood Potency) to one roll that uses an Attribute;</li>
+          <li>for the <b>Blush of Life</b>: look, feel and breathe like a living person for a night, including eating and drinking for about an hour;</li>
+          <li>to <b>mend damage</b>: Superficial each turn, and Aggravated at nightfall (three extra checks per point).</li>
+        </ul>
+        <p>At <b>Hunger 5</b> you can't choose to Rouse at all. If something forces a Rouse Check on you then, you test for hunger frenzy.</p>
+      </section>
+
+      <section class="rule" id="feeding">
+        <h2>Feeding</h2>
+        <div class="refs"><a class="pg" data-p="211"></a><a class="pg" data-p="212"></a><a class="pg" data-p="213"></a><a class="pg" data-p="175"></a><a class="pg" data-p="306"></a></div>
+        <p>Drinking lowers Hunger. Only <b>killing a human</b> takes you all the way to 0. Young vampires can reach Hunger 1 without killing, and older blood makes that harder.</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Source</th><th>Hunger slaked</th><th>Time</th></tr></thead>
+          <tbody>
+            <tr><td>A sip from a human</td><td class="num">1</td><td>3 turns</td></tr>
+            <tr><td>Safe full drink from a human</td><td class="num">2</td><td>One scene</td></tr>
+            <tr><td>Dangerous drink (risks the victim's life)</td><td class="num">1–4</td><td>1 turn per point</td></tr>
+            <tr><td>Draining a human to death</td><td class="num">5</td><td>About 5 turns</td></tr>
+            <tr><td>Blood bag / medium animal</td><td class="num">1</td><td>1 turn (useless above Blood Potency 2)</td></tr>
+          </tbody>
+        </table></div>
+        <p>Your <b>Predator Type</b>, picked at character creation, says how you usually hunt: Alleycat, Bagger, Blood Leech, Cleaver, Consensualist, Farmer, Osiris, Sandman, Scene Queen or Siren. <a class="pg" data-p="175"></a></p>
+        <p><b>Resonance:</b> a victim's mood flavours their blood. Angry blood (Choleric) feeds Celerity and Potence. Sad blood (Melancholy) feeds Fortitude and Obfuscate. Calm blood (Phlegmatic) feeds Auspex and Dominate. Happy or lustful blood (Sanguine) feeds Blood Sorcery and Presence. Animal blood feeds Animalism and Protean. You need the matching blood to raise those Disciplines. <a class="pg" data-p="226"></a><a class="pg" data-p="227"></a></p>
+        <p><b>Biting in a fight:</b> declare it first. It's a Strength + Brawl attack (−1 success unless you're already grappling). A win deals 2 Aggravated damage and pins your victim. <a class="pg" data-p="213"></a></p>
+      </section>
+
+      <section class="rule" id="potency">
+        <h2>Generation &amp; Blood Potency</h2>
+        <div class="refs"><a class="pg" data-p="214"></a><a class="pg" data-p="215"></a><a class="pg" data-p="216"></a></div>
+        <p><b>Generation</b> is how many steps removed you are from Caine, the first vampire. Player characters are usually 10th–13th; thin-bloods are 14th–16th. <b>Blood Potency</b> is how thick and strong your blood has grown with age. It makes your powers stronger, but it also makes you hungrier and your clan's curse worse.</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>BP</th><th>Blood Surge</th><th>Mend / Rouse</th><th>Power bonus</th><th>Bane Severity</th></tr></thead>
+          <tbody>
+            <tr><td class="num">0</td><td>+1 die</td><td>1</td><td>—</td><td>0 (thin-blood)</td></tr>
+            <tr><td class="num">1</td><td>+2 dice</td><td>1</td><td>—</td><td>2</td></tr>
+            <tr><td class="num">2</td><td>+2 dice</td><td>2</td><td>+1 die</td><td>2</td></tr>
+            <tr><td class="num">3</td><td>+3 dice</td><td>2</td><td>+1 die</td><td>3</td></tr>
+            <tr><td class="num">4</td><td>+3 dice</td><td>3</td><td>+2 dice</td><td>3</td></tr>
+            <tr><td class="num">5</td><td>+4 dice</td><td>3</td><td>+2 dice</td><td>4</td></tr>
+          </tbody>
+        </table></div>
+        <p>“Mend” is the Superficial Health damage removed per Rouse Check. At higher Blood Potency you also roll two dice on some Rouse Checks and keep the better one. <b>Bane Severity</b> is the number your clan's curse uses.</p>
+      </section>
+
+      <section class="rule" id="conflict">
+        <h2>Conflict &amp; combat</h2>
+        <div class="refs"><a class="pg" data-p="123"></a><a class="pg" data-p="124"></a><a class="pg" data-p="125"></a><a class="pg" data-p="130"></a></div>
+        <p>A fight, physical or social, is a series of contests that cause damage. Each <b>turn</b>:</p>
+        <ol>
+          <li>Everyone says what they're trying to do.</li>
+          <li>The Storyteller decides what the enemies do and tells everyone which pool to roll. Examples: <b>Strength + Brawl</b>, <b>Dexterity + Melee</b>, <b>Composure + Firearms</b>, or <b>Manipulation + Persuasion</b> in an argument.</li>
+          <li>Attacker and defender roll at the same time. <b>The higher side wins</b> and deals damage equal to the difference (the margin), plus any weapon bonus.</li>
+        </ol>
+        <ul>
+          <li><b>Order:</b> fighters already in melee go first, then shooting, then anyone starting a melee, then everything else. <a class="pg" data-p="125"></a> (A traditional Initiative option is on <a class="pg" data-p="300"></a>.)</li>
+          <li><b>Two-sided fights:</b> if both sides can hurt each other, one roll decides it. A tie means both take 1 damage.</li>
+          <li><b>Dodging:</b> defend with <b>Dexterity + Athletics</b> instead. You can't hurt the attacker that turn.</li>
+          <li><b>Shooting</b> is usually opposed by the target's Dexterity + Athletics. No cover means −2 to the defence; solid cover adds +1 or +2.</li>
+          <li><b>Several attackers:</b> your defence loses 1 die for each attacker after the first. To hit several foes, split your pool between them.</li>
+          <li><b>Three Turns and Out:</b> the book recommends wrapping up most fights in about three turns. Let one side flee, give the win to whoever is ahead, or bring in a twist. <a class="pg" data-p="130"></a></li>
+        </ul>
+        <h3>Weapon damage bonus</h3>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Weapon</th><th>Bonus</th></tr></thead>
+          <tbody>
+            <tr><td>Improvised weapon, wooden stake</td><td class="num">+0</td></tr>
+            <tr><td>Brass knuckles</td><td class="num">+1</td></tr>
+            <tr><td>Bat, club, tire iron · crossbow bolt, switchblade · .22 pistol</td><td class="num">+2</td></tr>
+            <tr><td>Sword, fire axe · 9mm pistol, rifle</td><td class="num">+3</td></tr>
+            <tr><td>Claymore · close-range shotgun, .357 Magnum</td><td class="num">+4</td></tr>
+          </tbody>
+        </table></div>
+        <p>Grappling, called shots, armor and more advanced combat options start on <a class="pg" data-p="295"></a>. Social combat rules are on <a class="pg" data-p="304"></a>.</p>
+      </section>
+
+      <section class="rule" id="damage">
+        <h2>Damage &amp; healing</h2>
+        <div class="refs"><a class="pg" data-p="126"></a><a class="pg" data-p="127"></a><a class="pg" data-p="218"></a></div>
+        <p>Physical fights hurt <b>Health</b>; social fights hurt <b>Willpower</b>. There are two kinds of damage:</p>
+        <ul>
+          <li><b>Superficial ( / ):</b> bruises and flesh wounds. <b>Halve it (round up)</b> before marking it. For vampires, most ordinary weapons, <i>including bullets and blades</i>, only do Superficial damage.</li>
+          <li><b>Aggravated ( X ):</b> real, lasting harm. For vampires that means <b>fire, sunlight, and the claws and teeth</b> of supernatural creatures. Social attacks that use your secrets, or betrayal by someone close, do Aggravated Willpower damage.</li>
+        </ul>
+        <p><b>Impaired:</b> once every box on a tracker is filled, you lose 2 dice from related pools. Each further hit turns a / into an X. A Health track <b>full of X's</b> sends a vampire into <b>torpor</b> (a mortal dies).</p>
+        <p><b>Healing as a vampire:</b> make a Rouse Check each turn to remove Superficial Health damage (the amount depends on Blood Potency). Aggravated damage heals <b>1 point per night</b>, costing three Rouse Checks at nightfall. <a class="pg" data-p="218"></a></p>
+      </section>
+
+      <section class="rule" id="frenzy">
+        <h2>Frenzy</h2>
+        <div class="refs"><a class="pg" data-p="219"></a><a class="pg" data-p="220"></a></div>
+        <p>When the Beast is provoked, you roll <b>Willpower + one-third of your Humanity</b> (rounded down) against a Difficulty set by the trigger. Fail, and the Storyteller controls your character until the frenzy ends.</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Type</th><th>Triggered by</th><th>You will…</th></tr></thead>
+          <tbody>
+            <tr><td><b>Fury</b></td><td>Insults, humiliation, a friend or Touchstone hurt</td><td>Tear the cause apart, and maybe anyone nearby</td></tr>
+            <tr><td><b>Hunger</b></td><td>Blood when you're starving; failing a Rouse Check at Hunger 5</td><td>Feed on the nearest human until Hunger is 1 or lower</td></tr>
+            <tr><td><b>Terror</b> (Rötschreck)</td><td>Fire, sunlight, grave wounds</td><td>Flee blindly from the danger</td></tr>
+          </tbody>
+        </table></div>
+        <p>A normal win costs you your turn; a critical win costs nothing. You can also choose to <b>Ride the Wave</b>: give in on purpose and play out the frenzy yourself. While frenzied, you ignore wound penalties, can only use physical Disciplines, and get +3 dice to resist mind powers. Spending Willpower gives you control back for one turn.</p>
+      </section>
+
+      <section class="rule" id="dangers">
+        <h2>Sun, fire, stakes &amp; death</h2>
+        <div class="refs"><a class="pg" data-p="219"></a><a class="pg" data-p="221"></a><a class="pg" data-p="223"></a></div>
+        <ul>
+          <li><b>Sunlight:</b> Aggravated damage each turn equal to your Bane Severity. Heavy clothing or curtains slow it to every other turn.</li>
+          <li><b>Fire:</b> Aggravated damage based on how much of you is burning, from 1 for a hand to 3+ for a burning building.</li>
+          <li><b>A stake through the heart</b> paralyses you but doesn't destroy you. In a fight it takes a called shot at −2 that deals 5+ damage.</li>
+          <li><b>Decapitation</b> destroys you outright.</li>
+          <li><b>Torpor:</b> a deathlike sleep, entered from damage, from starvation, or by choice. How long it lasts depends on your Humanity. You wake at Hunger 5.</li>
+          <li><b>Final Death:</b> any further fire or sunlight damage while in torpor, beheading, or total destruction of the body.</li>
+          <li><b>Daytime:</b> waking during the day takes a Humanity roll, and your pools can't exceed your Humanity. <a class="pg" data-p="219"></a></li>
+        </ul>
+      </section>
+
+      <section class="rule" id="humanity">
+        <h2>Humanity, Stains &amp; Remorse</h2>
+        <div class="refs"><a class="pg" data-p="236"></a><a class="pg" data-p="239"></a><a class="pg" data-p="240"></a><a class="pg" data-p="172"></a></div>
+        <p>Humanity (0–10) measures how much of the person you were is still there. New characters start at <b>7</b>. Higher Humanity helps you resist frenzy, pass for human and wake by day. Lower Humanity makes you colder, more monstrous and longer-sleeping in torpor.</p>
+        <ol>
+          <li>Breaking your chronicle's <b>Tenets</b> (the group's agreed moral lines) earns <b>Stains</b>, marked from the right end of the Humanity track. Acting for one of your <b>Convictions</b> can reduce the Stains.</li>
+          <li>Harm to your <b>Touchstones</b>, the mortals tied to your Convictions, also earns Stains, and more if you caused it.</li>
+          <li>At the end of each session, if you have any Stains, roll <b>Remorse</b>: one die per box that is neither filled nor stained (minimum 1). <b>Any success:</b> keep your Humanity and clear the Stains. <b>No successes:</b> lose 1 Humanity, then clear them.</li>
+        </ol>
+        <p>If you have more Stains than empty boxes, you're <b>Impaired</b> with guilt (−2 dice) and take Aggravated Willpower damage for the overflow.</p>
+      </section>
+
+      <section class="rule" id="bond">
+        <h2>The Blood Bond</h2>
+        <div class="refs"><a class="pg" data-p="233"></a><a class="pg" data-p="234"></a></div>
+        <p>Drinking a vampire's blood straight from the vein, on <b>three separate nights</b> within a year, creates a Blood Bond: obsessive loyalty to that vampire. The drinker is the <b>thrall</b>; the vampire is the <b>regnant</b>. To act against the regnant, the thrall must win <b>Resolve + Intelligence vs. the Bond's strength</b>. A Bond weakens for each month without another drink, and breaking it means staying away for a long time. Mortals bound this way become <b>ghouls</b>.</p>
+      </section>
+
+      <section class="rule" id="disciplines">
+        <h2>Disciplines</h2>
+        <div class="refs"><a class="pg" data-p="243"></a><a class="pg" data-p="244"></a></div>
+        <p>Disciplines are rated 1–5. <b>Each dot gives you one power</b> chosen from that level or below. You can activate one power per turn, most cost a Rouse Check, and any number can be running at once. Learning a Discipline outside your clan means tasting the blood of someone who has it. <b>Amalgam</b> powers require dots in two Disciplines.</p>
+        <p>Every Discipline, with its signature powers by level, is described on the <a href="/clans/#disciplines">Clans page</a>.</p>
+      </section>
+
+      <section class="rule" id="creation">
+        <h2>Making a character (quick version)</h2>
+        <div class="refs"><a class="pg" data-p="135"></a><a class="pg" data-p="136"></a><a class="pg" data-p="137"></a></div>
+        <ol>
+          <li><b>Concept:</b> who you were in life, and your <b>Ambition</b> (long-term) and <b>Desire</b> (right now).</li>
+          <li><b>Clan &amp; sire:</b> pick a clan from the <a href="/clans/">Clans page</a>.</li>
+          <li><b>Attributes:</b> one at 4, three at 3, four at 2, one at 1. Then Health = Stamina + 3 and Willpower = Composure + Resolve.</li>
+          <li><b>Skills:</b> pick a spread. <i>Jack of all trades</i>: one at 3, eight at 2, ten at 1. <i>Balanced</i>: three at 3, five at 2, seven at 1. <i>Specialist</i>: one at 4, three at 3, three at 2, three at 1. Add free Specialties for Academics, Craft, Performance and Science, plus one more.</li>
+          <li><b>Disciplines:</b> two of your clan's three, with 2 dots in one and 1 in the other.</li>
+          <li><b>Predator Type:</b> gives a Specialty, a Discipline dot, and its Advantages and Flaws. <a class="pg" data-p="175"></a></li>
+          <li><b>Advantages:</b> spend 7 points and take 2 points of Flaws. <a class="pg" data-p="179"></a></li>
+          <li><b>Beliefs:</b> 1–3 Convictions, each with a Touchstone. Humanity starts at 7.</li>
+          <li><b>Age:</b> Childer (Embraced in the last 15 years) are 14th–16th or 12th–13th Generation. Neonates get +15 XP, and Ancillae get +35 XP with some trade-offs. <a class="pg" data-p="137"></a></li>
+        </ol>
+      </section>
+
+      <section class="rule" id="xp">
+        <h2>Experience</h2>
+        <div class="refs"><a class="pg" data-p="130"></a><a class="pg" data-p="137"></a></div>
+        <p>You usually earn <b>1 XP per session plus 1 per finished story</b>. Spend it like this (“new level” means the dot you're buying):</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Trait</th><th>Cost</th></tr></thead>
+          <tbody>
+            <tr><td>Attribute</td><td class="num">new level × 5</td></tr>
+            <tr><td>Skill</td><td class="num">new level × 3</td></tr>
+            <tr><td>New Specialty</td><td class="num">3</td></tr>
+            <tr><td>Clan Discipline</td><td class="num">new level × 5</td></tr>
+            <tr><td>Other Discipline</td><td class="num">new level × 7</td></tr>
+            <tr><td>Caitiff Discipline</td><td class="num">new level × 6</td></tr>
+            <tr><td>Blood Sorcery Ritual / Thin-blood Formula</td><td class="num">level × 3</td></tr>
+            <tr><td>Advantage</td><td class="num">3 per dot</td></tr>
+            <tr><td>Blood Potency</td><td class="num">new level × 10</td></tr>
+          </tbody>
+        </table></div>
+      </section>
+
+      <section class="rule" id="time">
+        <h2>Time &amp; pacing</h2>
+        <div class="refs"><a class="pg" data-p="115"></a><a class="pg" data-p="116"></a><a class="pg" data-p="290"></a></div>
+        <p>The game counts time in <b>turns</b> (one action), <b>scenes</b> (one place or exchange), <b>sessions</b> (one night of play), <b>stories</b> (a full tale) and the <b>chronicle</b> (your whole campaign). The book encourages rolling dice sparingly. Many scenes play better with no dice at all, or with one roll at the start that sets where the scene is headed.</p>
+        <a class="back-top" href="#top">↑ Back to top</a>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-links"><a href="/codex/">Codex</a><a href="/basics/">Basics</a><a href="/clans/">Clans</a><a href="/">Home</a></div>
+  <p class="motto">Where darkness is an art form.</p>
+  <p class="copy">A fan-made player reference for our chronicle. Rules summarised in our own words; page numbers refer to the <i>Vampire: The Masquerade</i> 5th Edition Corebook. Vampire: The Masquerade is © Paradox Interactive AB; corebook published by Renegade Game Studios. Not affiliated with or endorsed by either.</p>
+</footer>
+<script src="/codex.js"></script>
+</body>
+</html>
