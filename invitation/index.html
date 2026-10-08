@@ -31,6 +31,7 @@
   .revealed p, .revealed address { margin: 0; font-style: normal; color: var(--ink); }
   .revealed a { color: var(--gold); }
   .forget { margin-top: 1.5rem; font-size: .95rem; color: var(--muted); background: none; border: 0; text-decoration: underline; cursor: pointer; font: inherit; }
+  .riddle { font-family: var(--display); color: var(--ink); font-size: clamp(1.15rem, 4.5vw, 1.45rem); line-height: 1.7; margin: 0 0 1rem; font-style: normal; max-width: none; }
   [hidden] { display: none !important; }
 </style>
 </head>
@@ -53,7 +54,7 @@
   <section class="page-head">
     <p class="kicker">For invited guests</p>
     <h1>The Invitation</h1>
-    <p class="lede">The way to the gathering is sealed. Speak the word you were given, and it will open.</p>
+    <p class="lede">The way to the gathering is sealed. Answer the riddle, and it will open.</p>
   </section>
 
   <div class="seal-wrap">
@@ -64,7 +65,8 @@
     </svg>
 
     <form class="gate" id="gate" autocomplete="off">
-      <label for="word">Speak the word</label>
+      <blockquote class="riddle">What bitter rose<br>Of liquid splendor<br>Can feed both thirst<br>And boisterous humor?</blockquote>
+      <label for="word">Your answer</label>
       <input id="word" name="word" type="password" required autocapitalize="none" spellcheck="false" placeholder="· · · · · ·">
       <button class="btn primary" type="submit" id="open">Break the Seal</button>
       <p class="msg" id="msg" role="status" aria-live="polite"></p>
@@ -88,7 +90,7 @@
 <script>
 // The details below are encrypted (AES-256-GCM, key from the passphrase via PBKDF2-SHA256).
 // Without the word, this is unreadable — to people, search engines and anyone reading the source.
-var SEALED = {"iter":0,"salt":"","iv":"","ct":""};
+var SEALED = {"iter": 600000, "salt": "TxMl96iRKAC46qZJe4oCYg==", "iv": "zEFCt7/77/sacc2v", "ct": "9ziwnRp9BpKAQIGanKQgENvRQYSJ6ouyXt5AzlAeI4ruRuoTrzQEFq74jPVePe87QqHKCUm83jbIlfFuDSS3Sk+gxaCGCiyZrTet4oVUR2k+9sKWYiFWiBs7EdY8RP/ZHZlqWpMKEW1+U7LB/AOIcEUuqv99egJSRPprd7OdB2x508+3kqr9Sjt8HFmca+LT0wVzWx6V6wMA+k4SrMCLtCHOzzEOmyHFf3wauNdlk/WWVH7vGKh3Q/k9ztSRmpNl7tZhunH7Eiu2noSdymE5FcCyTHrXfRl7XAN9cwslrGYkRAtxx+DzW26LtrjiSMVpw5raUitIqHNSuzhYgNgv7E4brwDUISQmm+LbfXWICOvAAzSeAsRLyATtPM5rbNLQow57BE2kQIY12PTByk61TAVxBCZzP+qrXQMRjxtohrCfolNKDpMJ0LxgNQcTOJH430sgxAxlZKsUm+1Qz9oLJP+PEHJCAySWycRgIKWz5j9xu0F5F0H3dRriXoXVPSs48nyoT5YRbGZnfp+cJL9RFVp/CB9CTERy8gy1emEpRjzyXxV2aOD8t9o1MdbCpzz7lo9OQSrKiyepac/IOnL2cbLBwiBmt6wBdBfiBJWjoM6gwq4eka1WoVc2f856P+SFIhlRwdHQKtSvrNwbuS57U25kY/+R/EKe772boX2UTyIGIUEYDZ5NyYpyEARAuj+JFSvxIz88uQG9okgJFUHOuh8BhWV9Zs8jGXDOWupqnPlvVLpgYQy3wDOhdAoXLIM3nBeJB+ogCurhxVT9Nw6maX4p"};
 
 (function () {
   var form = document.getElementById("gate"), input = document.getElementById("word"),
@@ -113,7 +115,7 @@ var SEALED = {"iter":0,"salt":"","iv":"","ct":""};
       form.hidden = true; out.hidden = false; msg.textContent = "";
       try { sessionStorage.setItem(KEY, word); } catch (e) {}
     } catch (e) {
-      msg.textContent = quiet ? "" : "The seal holds. That is not the word.";
+      msg.textContent = quiet ? "" : "The seal holds. That is not the answer.";
       try { sessionStorage.removeItem(KEY); } catch (e2) {}
     } finally { btn.disabled = false; }
   }
