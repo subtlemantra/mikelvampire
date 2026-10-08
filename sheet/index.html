@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<title>Character Sheet · Mikel Vampire Masquerade</title>
+<meta name="theme-color" content="#0b0709">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="/" aria-label="Mikel Vampire Masquerade, home">
+    <svg class="mask" viewBox="0 0 64 28" aria-hidden="true"><path d="M2 6c6-4 16-4 22 2 3 3 5 3 8 3s5 0 8-3c6-6 16-6 22-2-1 10-6 18-15 19-6 1-10-3-15-3s-9 4-15 3C8 24 3 16 2 6Z"/><ellipse cx="17" cy="13" rx="6" ry="3.5" class="eye"/><ellipse cx="47" cy="13" rx="6" ry="3.5" class="eye"/></svg>
+    <span>Mikel</span>
+  </a>
+  <nav aria-label="Main">
+    <a href="/codex/">Codex</a>
+    <a href="/basics/">Basics</a>
+    <a href="/clans/">Clans</a>
+    <a href="/sheet/" aria-current="page">Sheet</a>
+    <a href="/#rulebook">Library</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="page-head">
+    <p class="kicker">For invited guests</p>
+    <h1>Your Character Sheet</h1>
+    <p class="lede">Fill in your Kindred here and Mikel will have it printed and waiting for you on game night. Your work saves on this device as you go, and you can come back and change it any time.</p>
+    <p class="note"><strong>New to V5?</strong> Keep <a href="/basics/#creation" target="_blank" rel="noopener">Making a character</a> and <a href="/clans/" target="_blank" rel="noopener">The Clans</a> open in another tab. Tips in each section tell you what the book expects. Only the two names at the top are required.</p>
+  </section>
+
+  <form id="sheet" class="wrap sheet" autocomplete="off" novalidate>
+
+    <!-- IDENTITY -->
+    <section class="sec" id="s-who">
+      <h2>Who Are You?</h2>
+      <div class="g2">
+        <label class="f req">Player name<input name="player" required maxlength="80" placeholder="Your real name"></label>
+        <label class="f req">Character name<input name="character" required maxlength="80" placeholder="Your vampire's name"></label>
+      </div>
+      <p class="load-line">Already sent a sheet? Enter both names above, then <button type="button" class="linkish" id="loadBtn">load it to keep editing</button>.</p>
+    </section>
+
+    <!-- CONCEPT -->
+    <section class="sec" id="s-concept">
+      <h2>Concept &amp; Clan</h2>
+      <p class="tip">Who were you in life, and who are you now? <b>Ambition</b> is a long-term goal; <b>Desire</b> is what you want right now. <a class="pg" data-p="135"></a></p>
+      <div class="g3">
+        <label class="f">Concept<input name="concept" maxlength="120" placeholder="e.g. Disgraced art dealer"></label>
+        <label class="f">Clan
+          <select name="clan" id="clan">
+            <option value="">— choose —</option>
+            <option>Brujah</option><option>Gangrel</option><option>Malkavian</option><option>Nosferatu</option>
+            <option>Toreador</option><option>Tremere</option><option>Ventrue</option><option>Caitiff</option><option>Thin-Blooded</option>
+            <option value="Other">Other (ask the Storyteller)</option>
+          </select>
+        </label>
+        <label class="f">Predator type
+          <select name="predator">
+            <option value="">— choose —</option>
+            <option>Alleycat</option><option>Bagger</option><option>Blood Leech</option><option>Cleaver</option><option>Consensualist</option>
+            <option>Farmer</option><option>Osiris</option><option>Sandman</option><option>Scene Queen</option><option>Siren</option>
+          </select>
+        </label>
+        <label class="f">Sire<input name="sire" maxlength="120"></label>
+        <label class="f">Generation
+          <select name="generation">
+            <option value="">— choose —</option>
+            <option>10th</option><option>11th</option><option>12th</option><option>13th</option><option>14th</option><option>15th</option><option>16th</option>
+          </select>
+        </label>
+        <label class="f">Chronicle<input name="chronicle" maxlength="120" value="Mikel's Masquerade"></label>
+        <label class="f wide2">Ambition<input name="ambition" maxlength="160"></label>
+        <label class="f">Desire<input name="desire" maxlength="160"></label>
+      </div>
+      <p class="hint" id="clanHint"></p>
+    </section>
+
+    <!-- ATTRIBUTES -->
+    <section class="sec" id="s-attr">
+      <h2>Attributes</h2>
+      <p class="tip">Take <b>one at 4, three at 3, four at 2, one at 1</b>. Tap a dot to set it; tap it again to lower it. <a class="pg" data-p="136"></a></p>
+      <div class="cols3">
+        <div><h3>Physical</h3><div class="dots-list" data-group="attr" data-keys="strength:Strength,dexterity:Dexterity,stamina:Stamina"></div></div>
+        <div><h3>Social</h3><div class="dots-list" data-group="attr" data-keys="charisma:Charisma,manipulation:Manipulation,composure:Composure"></div></div>
+        <div><h3>Mental</h3><div class="dots-list" data-group="attr" data-keys="intelligence:Intelligence,wits:Wits,resolve:Resolve"></div></div>
+      </div>
+      <p class="counter" id="attrCount"></p>
+      <div class="trackers">
+        <div><span>Health</span><b id="hp">—</b><small>Stamina + 3</small></div>
+        <div><span>Willpower</span><b id="wp">—</b><small>Composure + Resolve</small></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="sec" id="s-skills">
+      <h2>Skills</h2>
+      <p class="tip">Pick one spread. <b>Jack of all trades:</b> one at 3, eight at 2, ten at 1. <b>Balanced:</b> three at 3, five at 2, seven at 1. <b>Specialist:</b> one at 4, three at 3, three at 2, three at 1. Write <b>Specialties</b> on the line (free ones in Academics, Craft, Performance and Science, plus one more). <a class="pg" data-p="136"></a></p>
+      <div class="cols3">
+        <div><h3>Physical</h3><div class="dots-list skills" data-group="skill" data-keys="athletics:Athletics,brawl:Brawl,craft:Craft,drive:Drive,firearms:Firearms,melee:Melee,larceny:Larceny,stealth:Stealth,survival:Survival"></div></div>
+        <div><h3>Social</h3><div class="dots-list skills" data-group="skill" data-keys="animalken:Animal Ken,etiquette:Etiquette,insight:Insight,intimidation:Intimidation,leadership:Leadership,performance:Performance,persuasion:Persuasion,streetwise:Streetwise,subterfuge:Subterfuge"></div></div>
+        <div><h3>Mental</h3><div class="dots-list skills" data-group="skill" data-keys="academics:Academics,awareness:Awareness,finance:Finance,investigation:Investigation,medicine:Medicine,occult:Occult,politics:Politics,science:Science,technology:Technology"></div></div>
+      </div>
+      <p class="counter" id="skillCount"></p>
+    </section>
+
+    <!-- DISCIPLINES -->
+    <section class="sec" id="s-disc">
+      <h2>Disciplines</h2>
+      <p class="tip">Start with two of your clan's Disciplines: <b>2 dots in one, 1 in the other</b>, plus one dot from your Predator type. Each dot = one power from that level or below. <a href="/clans/#disciplines" target="_blank" rel="noopener">See every power →</a></p>
+      <div class="disc-grid" id="discGrid"></div>
+    </section>
+
+    <!-- BLOOD -->
+    <section class="sec" id="s-blood">
+      <h2>Blood, Hunger &amp; Humanity</h2>
+      <p class="tip">New Kindred usually start at <b>Humanity 7</b> and <b>Blood Potency 1</b> (0 for thin-bloods). The boxes below fill themselves in from your Blood Potency and clan, but you can change them. <a class="pg" data-p="216"></a></p>
+      <div class="cols3 blood">
+        <div class="dots-list" data-group="blood" data-keys="hunger:Hunger" data-max="5"></div>
+        <div class="dots-list" data-group="blood" data-keys="humanity:Humanity" data-max="10" data-default="7"></div>
+        <div class="dots-list" data-group="blood" data-keys="blood_potency:Blood Potency" data-max="10" data-default="1"></div>
+      </div>
+      <div class="g3" style="margin-top:1rem">
+        <label class="f">Resonance<input name="resonance" maxlength="60" placeholder="e.g. Sanguine"></label>
+        <label class="f">Blood Surge<input name="blood_surge" data-auto maxlength="40"></label>
+        <label class="f">Mend amount<input name="mend_amount" data-auto maxlength="40"></label>
+        <label class="f">Power bonus<input name="power_bonus" data-auto maxlength="40"></label>
+        <label class="f">Rouse re-roll<input name="rouse_reroll" data-auto maxlength="40"></label>
+        <label class="f">Feeding penalty<input name="feeding_penalty" data-auto maxlength="80"></label>
+        <label class="f">Bane severity<input name="bane_severity" data-auto maxlength="20"></label>
+      </div>
+    </section>
+
+    <!-- BELIEFS -->
+    <section class="sec" id="s-beliefs">
+      <h2>Tenets, Convictions &amp; Bane</h2>
+      <p class="tip">Choose <b>1–3 Convictions</b>, each tied to a <b>Touchstone</b>, a mortal who embodies it (e.g. "Clara, my sister: family is sacred"). Chronicle Tenets are the group's moral lines; Mikel will share them. <a class="pg" data-p="172"></a></p>
+      <div class="g3">
+        <label class="f">Chronicle tenets<textarea name="tenets" rows="5" maxlength="1200"></textarea></label>
+        <label class="f">Touchstones &amp; Convictions<textarea name="touchstones" rows="5" maxlength="1200"></textarea></label>
+        <label class="f">Clan bane<textarea name="clan_bane" rows="5" data-auto maxlength="1200"></textarea></label>
+      </div>
+    </section>
+
+    <!-- ADVANTAGES -->
+    <section class="sec" id="s-adv">
+      <h2>Advantages &amp; Flaws</h2>
+      <p class="tip">Spend <b>7 dots</b> on Merits and Backgrounds and take <b>2 dots</b> of Flaws, plus whatever your Predator type gives. Write one per line, e.g. "Haven" ●●, "Flaw: Prey Exclusion" ●. <a class="pg" data-p="179"></a></p>
+      <div class="adv-list" id="advList"></div>
+    </section>
+
+    <!-- STORY -->
+    <section class="sec" id="s-story">
+      <h2>Story &amp; Appearance</h2>
+      <div class="g4">
+        <label class="f">True age<input name="true_age" maxlength="40"></label>
+        <label class="f">Apparent age<input name="apparent_age" maxlength="40"></label>
+        <label class="f">Date of birth<input name="date_of_birth" maxlength="60"></label>
+        <label class="f">Date of death<input name="date_of_death" maxlength="60"></label>
+      </div>
+      <div class="g2">
+        <label class="f">Appearance<textarea name="appearance" rows="3" maxlength="600"></textarea></label>
+        <label class="f">Distinguishing features<textarea name="features" rows="3" maxlength="600"></textarea></label>
+        <label class="f">History<textarea name="history" rows="8" maxlength="3000"></textarea></label>
+        <label class="f">Notes<textarea name="notes" rows="8" maxlength="3000"></textarea></label>
+      </div>
+      <div class="g4">
+        <label class="f">Total experience<input name="total_xp" inputmode="numeric" maxlength="10"></label>
+        <label class="f">Spent experience<input name="spent_xp" inputmode="numeric" maxlength="10"></label>
+      </div>
+    </section>
+
+  </form>
+
+  <div class="savebar" role="region" aria-label="Save">
+    <span id="status" role="status" aria-live="polite">Draft saves on this device as you type.</span>
+    <button type="button" class="btn primary" id="saveBtn">Send to Mikel</button>
+  </div>
+
+  <dialog id="riddleDlg">
+    <form method="dialog" id="riddleForm">
+      <p class="kicker">Answer the riddle</p>
+      <blockquote class="riddle">What bitter rose<br>Of liquid splendor<br>Can feed both thirst<br>And boisterous humor?</blockquote>
+      <input id="riddleAns" type="password" autocapitalize="none" spellcheck="false" placeholder="Your answer" aria-label="Riddle answer">
+      <div class="actions"><button class="btn" value="cancel" type="button" id="riddleCancel">Cancel</button><button class="btn primary" value="ok" id="riddleOk">Continue</button></div>
+    </form>
+  </dialog>
+</main>
+
+<footer>
+  <div class="footer-links"><a href="/codex/">Codex</a><a href="/basics/">Basics</a><a href="/clans/">Clans</a><a href="/">Home</a></div>
+  <p class="motto">Where darkness is an art form.</p>
+  <p class="copy">© 2026 Mikel Vampire Masquerade</p>
+</footer>
+<script src="/codex.js"></script>
+<script src="sheet.js"></script>
+</body>
+</html>

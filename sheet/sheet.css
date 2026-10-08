@@ -1,0 +1,87 @@
+.sheet { padding-bottom: 7rem; }
+.sec { border: 1px solid var(--line); background: linear-gradient(180deg, var(--bg-2), var(--bg)); padding: 1.6rem 1.3rem 1.4rem; margin: 0 0 1.4rem; scroll-margin-top: 5rem; }
+.sec h2 { font-size: clamp(1.3rem, 4vw, 1.7rem); color: var(--gold); margin-bottom: .5rem; }
+.sec h3 { font-family: var(--display); font-weight: 400; font-size: .95rem; color: var(--blood-bright); letter-spacing: .08em; margin: 0 0 .6rem; text-transform: uppercase; }
+.tip { color: var(--muted); font-size: 1.02rem; margin: 0 0 1.1rem; }
+.tip b { color: var(--ink); font-weight: 600; }
+.tip a:not(.pg) { color: var(--gold); }
+.hint { color: var(--gold); font-style: italic; margin: .8rem 0 0; min-height: 1em; }
+
+.g2, .g3, .g4 { display: grid; gap: .9rem 1rem; }
+.g2 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.g3 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.g4 { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); margin: .9rem 0; }
+@media (min-width: 700px) { .wide2 { grid-column: span 2; } }
+
+.f { display: flex; flex-direction: column; gap: .3rem; font-family: var(--display); font-size: .8rem; letter-spacing: .06em; color: var(--muted); }
+.f.req::after { content: "Required"; font-family: var(--body); font-size: .8rem; letter-spacing: 0; color: var(--blood-bright); order: 3; }
+.f input, .f select, .f textarea, .dot-row input.spec, .adv-row input, .disc input, .disc select {
+  font-family: var(--body); font-size: 1.1rem; letter-spacing: 0; color: var(--ink);
+  background: #0e080b; border: 1px solid var(--line); padding: .55rem .7rem; width: 100%; border-radius: 0;
+}
+.f textarea { resize: vertical; line-height: 1.4; }
+.f select { appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--gold) 50%), linear-gradient(135deg, var(--gold) 50%, transparent 50%); background-position: calc(100% - 16px) 55%, calc(100% - 11px) 55%; background-size: 5px 5px; background-repeat: no-repeat; padding-right: 2rem; }
+.f input:focus, .f select:focus, .f textarea:focus, .sheet input:focus, .sheet select:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 1px var(--gold); }
+.invalid input { border-color: var(--blood-bright) !important; }
+
+.cols3 { display: grid; gap: 1.4rem 2rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.dots-list { display: flex; flex-direction: column; gap: .5rem; }
+.dot-row { display: flex; align-items: center; justify-content: space-between; gap: .6rem; flex-wrap: wrap; }
+.dot-row > .lbl { color: var(--ink); font-size: 1.12rem; min-width: 7.2rem; }
+.skills .dot-row { border-bottom: 1px dotted var(--line); padding-bottom: .45rem; }
+.dot-row input.spec { font-size: .95rem; padding: .3rem .5rem; flex: 1 0 100%; order: 3; }
+
+.dots { display: inline-flex; gap: .15rem; flex-wrap: wrap; }
+.dot {
+  width: 30px; height: 30px; padding: 0; border: 0; background: none; cursor: pointer; display: grid; place-items: center;
+}
+.dot::before { content: ""; width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--muted); transition: background .12s, border-color .12s; }
+.dot.on::before { background: var(--blood-bright); border-color: var(--blood-bright); }
+.dot:hover::before { border-color: var(--gold); }
+.dot:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+.dots.square .dot::before { border-radius: 2px; }
+.dots .gap { width: 8px; }
+.dotval { font-size: .85rem; color: var(--muted); min-width: 1.2rem; text-align: right; }
+
+.counter { margin: 1rem 0 0; font-size: 1rem; color: var(--muted); }
+.counter .ok { color: #8fc28a; }
+.counter .warn { color: var(--gold); }
+
+.trackers { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
+.trackers div { border: 1px solid var(--line); padding: .6rem 1rem; display: grid; grid-template-columns: auto auto; gap: 0 .8rem; align-items: baseline; }
+.trackers span { font-family: var(--display); color: var(--gold); font-size: .9rem; }
+.trackers b { font-size: 1.6rem; color: var(--ink); font-weight: 400; }
+.trackers small { grid-column: 1 / -1; color: var(--muted); font-size: .85rem; }
+
+.blood .dot-row { flex-direction: column; align-items: flex-start; }
+
+.disc-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.disc { border: 1px solid var(--line); padding: .8rem; display: flex; flex-direction: column; gap: .45rem; background: #0e080b80; }
+.disc .head { display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; }
+.disc .head input { flex: 1 1 140px; font-family: var(--display); font-size: 1rem; }
+.disc input.pw { font-size: .98rem; padding: .35rem .6rem; }
+.disc .n { font-family: var(--display); font-size: .75rem; color: var(--muted); letter-spacing: .1em; }
+
+.adv-list { display: flex; flex-direction: column; gap: .5rem; }
+.adv-row { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; }
+.adv-row input { flex: 1 1 220px; }
+
+.load-line { color: var(--muted); font-size: 1rem; margin: .9rem 0 0; }
+.linkish { background: none; border: 0; padding: 0; color: var(--gold); font: inherit; text-decoration: underline; cursor: pointer; }
+
+.savebar {
+  position: sticky; bottom: 0; z-index: 20; display: flex; gap: 1rem; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  padding: .8rem 16px; background: rgba(11, 7, 9, .94); backdrop-filter: blur(6px); border-top: 1px solid var(--line);
+  max-width: 1000px; margin: 0 auto;
+}
+.savebar #status { color: var(--muted); font-size: 1rem; flex: 1 1 200px; }
+.savebar #status.good { color: #8fc28a; }
+.savebar #status.bad { color: var(--blood-bright); }
+.savebar .btn { cursor: pointer; font-family: var(--display); }
+.savebar .btn[disabled] { opacity: .5; cursor: wait; }
+
+dialog { background: var(--bg-2); color: var(--ink); border: 1px solid var(--gold); padding: 1.6rem 1.4rem; max-width: 26rem; width: calc(100% - 32px); text-align: center; }
+dialog::backdrop { background: rgba(0,0,0,.7); }
+dialog .riddle { font-family: var(--display); font-size: 1.2rem; line-height: 1.7; margin: .5rem 0 1rem; font-style: normal; }
+dialog input { width: 100%; font: inherit; font-size: 1.1rem; text-align: center; padding: .7rem; background: #0e080b; color: var(--ink); border: 1px solid var(--line); margin-bottom: 1rem; }
+dialog .btn { cursor: pointer; font-family: var(--display); }
