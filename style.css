@@ -260,3 +260,6 @@ td.num { white-space: nowrap; color: var(--gold); }
 .rulebook-cta { text-align: center; }
 .rulebook-cta .btn { margin-top: .5rem; }
 .layout > * { min-width: 0; }
+.setting { position: relative; max-width: 38rem; margin: .4rem auto 2.2rem; padding: 1.2rem 1.4rem; font-size: 1.12rem; line-height: 1.65; color: var(--ink); text-align: left; background: rgba(11, 7, 9, .55); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.setting em { color: var(--blood-bright); font-style: italic; }
+.setting-when { display: block; text-align: center; font-family: var(--display); font-size: .8rem; letter-spacing: .3em; text-transform: uppercase; color: var(--gold); margin-bottom: .6rem; }
