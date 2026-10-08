@@ -4,7 +4,7 @@
   "use strict";
 
   // Google Apps Script web app URL (ends in /exec). Empty = sending not switched on yet.
-  var ENDPOINT = "";
+  var ENDPOINT = "https://script.google.com/macros/s/AKfycbwU0D9NHOWHpKN9z2_OZG1zmakuijQW0IUIaAwAwPsBGw1PMB4bRVkDUnBMWCVWjiGf/exec";
 
   var DRAFT_KEY = "mvm-sheet-draft";
   var form = document.getElementById("sheet");
