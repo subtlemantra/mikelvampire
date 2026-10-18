@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<title>Chronicle Notes · Mikel Vampire Masquerade</title>
+<meta name="theme-color" content="#0b0709">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<style>
+  .chronicle { max-width: 760px; margin: 0 auto; padding: 0 16px 4rem; }
+  .session { border-top: 1px solid var(--line); padding: 3rem 0 1rem; }
+  .session-head { text-align: center; margin-bottom: 2.4rem; }
+  .session-head .num { font-family: var(--display); color: var(--blood-bright); letter-spacing: .2em; text-transform: uppercase; font-size: .85rem; margin: 0; }
+  .session-head h2 { font-size: clamp(1.8rem, 5.5vw, 2.6rem); color: var(--ink); line-height: 1.15; margin: .4rem 0 .5rem; }
+  .session-head .when { font-style: italic; color: var(--gold); margin: 0; font-size: 1.15rem; }
+  .coterie { display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin: 0 0 2.6rem; padding: 0; list-style: none; }
+  .coterie li { border: 1px solid var(--line); background: var(--bg-2); padding: .6rem .8rem; }
+  .coterie b { display: block; font-family: var(--display); font-weight: 400; color: var(--ink); font-size: 1rem; }
+  .coterie span { color: var(--muted); font-size: 1rem; font-style: italic; }
+  .scene { margin: 0 0 2.4rem; }
+  .scene h3 { font-family: var(--display); font-weight: 400; color: var(--gold); font-size: clamp(1.15rem, 3.6vw, 1.4rem); margin: 0 0 .8rem; }
+  .scene h3 small { display: block; font-family: var(--serif, inherit); font-style: italic; color: var(--muted); font-size: 1rem; letter-spacing: 0; margin-top: .2rem; }
+  .scene p { margin: 0 0 1rem; }
+  .scene .who { color: var(--blood-bright); font-weight: 600; }
+  .secrets { border-left: 3px solid var(--blood); background: var(--bg-2); padding: .9rem 1.1rem; margin: 1.2rem 0 0; }
+  .secrets h4 { font-family: var(--display); font-weight: 400; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin: 0 0 .5rem; }
+  .secrets ul { margin: 0; padding-left: 1.1rem; }
+  .secrets li { margin: .4rem 0; }
+  .secrets li i { color: var(--muted); }
+  .clue { display: grid; gap: 1.6rem; grid-template-columns: 1fr; align-items: center; border: 1px solid var(--line); background: var(--bg-2); padding: 1.4rem; margin: 1.4rem 0 0; }
+  @media (min-width: 640px) { .clue { grid-template-columns: 220px 1fr; } }
+  .clue svg { width: 100%; max-width: 220px; height: auto; margin: 0 auto; display: block; filter: drop-shadow(0 0 22px rgba(158,27,43,.4)); }
+  .clue h4 { font-family: var(--display); font-weight: 400; color: var(--gold); margin: 0 0 .5rem; letter-spacing: .08em; }
+  .clue p { margin: 0 0 .6rem; }
+  .threads { list-style: none; padding: 0; margin: 0; }
+  .threads li { padding: .8rem 0 .8rem 2rem; border-bottom: 1px solid var(--line); position: relative; }
+  .threads li::before { content: "✦"; position: absolute; left: .3rem; top: .85rem; color: var(--blood-bright); font-size: .85rem; }
+  .threads li:last-child { border-bottom: 0; }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="/" aria-label="Mikel Vampire Masquerade, home">
+    <svg class="mask" viewBox="0 0 64 28" aria-hidden="true"><path d="M2 6c6-4 16-4 22 2 3 3 5 3 8 3s5 0 8-3c6-6 16-6 22-2-1 10-6 18-15 19-6 1-10-3-15-3s-9 4-15 3C8 24 3 16 2 6Z"/><ellipse cx="17" cy="13" rx="6" ry="3.5" class="eye"/><ellipse cx="47" cy="13" rx="6" ry="3.5" class="eye"/></svg>
+    <span>Mikel</span>
+  </a>
+  <nav aria-label="Main">
+    <a href="/codex/">Codex</a>
+    <a href="/basics/">Basics</a>
+    <a href="/clans/">Clans</a>
+    <a href="/characters/">Characters</a>
+    <a href="/notes/" aria-current="page">Notes</a>
+    <a href="/sheet/">Sheet</a>
+    <a href="/#rulebook">Library</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="page-head">
+    <p class="kicker">Seattle by Night</p>
+    <h1>Chronicle Notes</h1>
+    <p class="lede">What happened, who said what, and what you walked away with. Read it before the next session, because the city remembers even if you don't.</p>
+  </section>
+
+  <div class="chronicle">
+
+    <article class="session" id="session-1">
+      <header class="session-head">
+        <p class="num">Session I</p>
+        <h2>The Blood Moon Sacrament</h2>
+        <p class="when">Played Saturday, October 17 · St. Augustus Mission, Pioneer Square</p>
+      </header>
+
+      <ul class="coterie" aria-label="The coterie">
+        <li><b>Dr. Mari Valentine</b><span>played by Allison</span></li>
+        <li><b>Séraphine de Montclair</b><span>played by Jennifer</span></li>
+        <li><b>Marcus Rollins</b><span>played by Stuart</span></li>
+        <li><b>Abram Redmond</b><span>played by Chris</span></li>
+        <li><b>Raymond Cross</b><span>played by Thomas</span></li>
+      </ul>
+
+      <section class="scene">
+        <h3>The red moon rises<small>The sacrament begins</small></h3>
+        <p>On the night of the eclipse, the moon turned the colour of old blood over Seattle, and the Camarilla gathered to mark it. Callus had lent the St. Augustus Mission for the sacrament. The shelter cots were gone, replaced by candlelit alcoves and a string quartet above the altar. Ghouls in black poured blood into cut-crystal goblets, and two hundred of the city's Kindred came to renew their loyalties in public. It was Elysium, so no violence was allowed, and the Harpy was always within earshot.</p>
+        <p>The coterie split up and worked the room.</p>
+      </section>
+
+      <section class="scene">
+        <h3>The man nobody invites<small>Dr. Mari Valentine and the Nosferatu</small></h3>
+        <p><span class="who">Mari</span> found the Nosferatu standing alone in a tuxedo two sizes too big, with a carnation where an ear should be. Everyone else in the room had been avoiding him all night. She talked to him, and he was so grateful for it that he told her everything he knew.</p>
+        <div class="secrets">
+          <h4>Secrets learned</h4>
+          <ul>
+            <li><b>Hector's pipeline runs under the city.</b> The Baron's people move product through the old Seattle Underground, beneath Pioneer Square. <i>"They think nobody goes down there. I go down there."</i> He knows where the drop points are.</li>
+            <li><b>Someone at the party is using.</b> The big man by the font, with pupils like pinpricks, had been seen at the Square three times this month.</li>
+            <li><b>The Alastor went to Callus first.</b> The night Cameron arrived in Seattle, he came up through the Nosferatu's tunnels. He didn't go to the Prince. He went to the Mission, to Callus.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="scene">
+        <h3>A guest who drank too deep<small>Séraphine, Marcus and the master of the Mission</small></h3>
+        <p><span class="who">Séraphine</span> and <span class="who">Marcus</span> sought out the man running the St. Augustus Mission and spoke with him. Séraphine drank too deeply of the blood he offered. The Beast woke, and she frenzied. She fed until she was satisfied, in front of the whole sacrament. Nobody was hurt, but the court saw it, and the court will talk about it for a long time.</p>
+      </section>
+
+      <section class="scene">
+        <h3>Words from behind the mask<small>Marcus Rollins and the Harpy</small></h3>
+        <p><span class="who">Marcus</span> drew the attention of the Harpy, the masked keeper of the court's reputations. The Harpy changed him into his dog form and back again, then vanished into the crowd without giving up a single secret. Whatever the Harpy knows, they're keeping it for now.</p>
+      </section>
+
+      <section class="scene">
+        <h3>All muscle, no filter<small>Dr. Mari Valentine and the enforcer</small></h3>
+        <p><span class="who">Mari</span> also found the enforcer: six foot five, a tuxedo losing the argument with his shoulders, and twitchy for his next hit. He's the man by the font the Nosferatu had pointed out. He didn't seem to know which things were secrets, and he gave them all up.</p>
+        <div class="secrets">
+          <h4>Secrets learned</h4>
+          <ul>
+            <li><b>He's using.</b> He was jonesing all night and kept asking where the lady in red's alcove was.</li>
+            <li><b>He's skimming the raids.</b> <i>"We hit one of the Baron's houses Tuesday. Took a cooler full of the good stuff. Most of it went in the evidence locker. Most of it."</i></li>
+            <li><b>His boss wants the Baron kept alive.</b> <i>"The boss says go easy on the Baron's runners. Bust a few, let the rest run. Says the Baron's more useful alive for now."</i> He had no idea why that matters.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="scene">
+        <h3>Something sweeter than the sacrament<small>Abram Redmond and the seductress</small></h3>
+        <p><span class="who">Abram</span> caught the eye of the most beautiful woman in the room, a Toreador in crimson silk with a rose-gold vial at her throat. She led him to a quiet alcove and offered him a taste of something sweeter than the sacrament: Hector's blood drug. Abram refused. With her charm spent and her offer turned down, she gave up everything she knew.</p>
+        <div class="secrets">
+          <h4>Secrets learned</h4>
+          <ul>
+            <li><b>She's selling the drug to the Camarilla's elite.</b> She offers it to elders in quiet alcoves, and they keep coming back.</li>
+            <li><b>The drug comes in with the sacrament.</b> Her supply is delivered to the Mission's service entrance, hidden inside tonight's vessel deliveries. <i>"Where better to hide blood than in a party full of it?"</i></li>
+            <li><b>She's afraid of the Alastor.</b> She's heard Cameron is asking about her. <i>"If the Alastor asks, you never saw me. I can make that worth your while."</i></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="scene">
+        <h3>You've got mail<small>Raymond Cross at the keyboard</small></h3>
+        <p>While the others worked the room, <span class="who">Raymond</span> found a computer, dialled in, and logged into AOL. The web history was still there. Someone had been researching a handful of Seattle clubs.</p>
+      </section>
+
+      <section class="scene">
+        <h3>Teeth in the rain<small>The alley off Pioneer Square</small></h3>
+        <p>The coterie left the sacrament with most of the night's secrets. A few blocks from the Mission, in a rain-slicked alley under a flickering sodium light, three werewolves were waiting. A grey war-form brute came down off the fire escape, a black wolf circled for throats, and a scared kid in a soaked hoodie named Toby shouted, <i>"Which of you made it? Which one?"</i></p>
+        <p>It was a hard fight, and the coterie won it outright. All three werewolves lay dead in the alley. When it was over, Toby had left something behind.</p>
+
+        <div class="clue">
+          <svg viewBox="0 0 220 300" role="img" aria-label="A crumpled black matchbook. On the cover, an open mouth bares one long canine tooth with a drop of blood beneath it, and the word Canine is written over the drop">
+            <defs>
+              <linearGradient id="mb-cover" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c0b10"/><stop offset="1" stop-color="#0a0507"/></linearGradient>
+              <radialGradient id="mb-drop" cx="40%" cy="55%" r="60%"><stop offset="0" stop-color="#e2475b"/><stop offset="1" stop-color="#7a1220"/></radialGradient>
+            </defs>
+            <g transform="rotate(-4 110 150)">
+              <rect x="22" y="14" width="176" height="272" rx="6" fill="url(#mb-cover)" stroke="#5a1a24" stroke-width="2"/>
+              <rect x="22" y="238" width="176" height="48" rx="4" fill="#120709" stroke="#5a1a24" stroke-width="2"/>
+              <rect x="30" y="252" width="160" height="12" fill="#3a2a20"/>
+              <path d="M30 252h160M30 264h160" stroke="#000" stroke-opacity=".5"/>
+              <path d="M26 232c20 4 40-3 60 1s50 4 70-1 30 2 38 0" fill="none" stroke="#000" stroke-opacity=".45" stroke-width="2"/>
+              <path d="M58 40c40 18 64 18 104 0" fill="none" stroke="#c9a96e" stroke-width="1.5" stroke-opacity=".5"/>
+              <path d="M48 86c14-20 38-28 62-28s48 8 62 28c-10 10-20 16-30 18H78c-10-2-20-8-30-18Z" fill="#2a0b12" stroke="#9e1b2b" stroke-width="3"/>
+              <path d="M54 86c18 6 36 8 56 8s38-2 56-8" fill="none" stroke="#e8dcc8" stroke-width="3"/>
+              <path d="M126 92l4 34 6-34Z" fill="#f2ead8" stroke="#e8dcc8" stroke-width="1.5"/>
+              <path d="M84 92l2 8 3-8M98 94l2 7 2-7M144 92l2 7 2-7" fill="#e8dcc8"/>
+              <path d="M131 136c0 0 -22 30 -22 46a22 22 0 0 0 44 0c0-16-22-46-22-46Z" fill="url(#mb-drop)"/>
+              <text x="110" y="196" text-anchor="middle" font-family="Cinzel Decorative, serif" font-weight="700" font-size="30" fill="#f2ead8" stroke="#0a0507" stroke-width="5" paint-order="stroke" letter-spacing="2">Canine</text>
+              <path d="M150 30l20 10M160 22l-6 18" stroke="#000" stroke-opacity=".35" stroke-width="2"/>
+            </g>
+          </svg>
+          <div>
+            <h4>Evidence: a matchbook</h4>
+            <p>A crumpled matchbook dropped by Toby. The cover shows an open mouth baring one long canine tooth, with a drop of blood beneath it and the word <b>Canine</b> written over the drop.</p>
+            <p>It looks like a club. Raymond's AOL history showed someone researching Seattle clubs.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene">
+        <h3>Loose threads</h3>
+        <ul class="threads">
+          <li><b>Canine.</b> What is it, where is it, and why was a werewolf carrying its matches?</li>
+          <li><b>The clubs in the AOL history.</b> Who was researching them, and is Canine one of them?</li>
+          <li><b>The Underground drop points.</b> The Nosferatu knows where they are. Nobody has gone down yet.</li>
+          <li><b>The vessel deliveries.</b> The drug comes in through the Mission's service entrance. Does Callus know what passes through his back door?</li>
+          <li><b>Cameron and Callus.</b> Why did the Alastor visit the Auditor before the Prince?</li>
+          <li><b>The enforcer's boss.</b> Someone in the Camarilla wants Hector alive, at least for now.</li>
+          <li><b>The Harpy.</b> They know something. They chose not to say it.</li>
+          <li><b>Séraphine's frenzy.</b> The court saw it, and the court remembers.</li>
+        </ul>
+      </section>
+
+      <a class="back-top" href="#top">↑ Back to top</a>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-links"><a href="/codex/">Codex</a><a href="/basics/">Basics</a><a href="/clans/">Clans</a><a href="/characters/">Characters</a><a href="/notes/">Notes</a><a href="/">Home</a></div>
+  <p class="motto">Where darkness is an art form.</p>
+  <p class="copy">© 2026 Mikel Vampire Masquerade</p>
+</footer>
+</body>
+</html>
